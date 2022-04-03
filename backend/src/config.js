@@ -198,3 +198,4 @@ module.exports = {
   PREREVEAL_TOKEN_URI,
   PRESALE_WHITELISTED_ADDRESSES
 };
+// end
