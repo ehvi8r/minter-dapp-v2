@@ -3,7 +3,7 @@
 //    2. Change wallet address/owner address/treasury address
 //    3. Change contract, remove rinkeby contract line 98 and uncomment line 97
 //    4. Change GrowEditionSize numbers for production
-//    5. Change public mint start date to 03 April 
+//    5. Change public mint start date to XX April 
 
 require('dotenv').config();
 const basePath = process.cwd();
