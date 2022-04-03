@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Website was moved to frontend to work with the CodeSTACKr code Collection Contract code -->
+<!-- Need to update the CSS with new fonts -->
+
+  <head>
+    <title>Bored Ape Cannabis Club</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BACC favicon  -->
+    <link rel="icon" href="images/x-icon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png" />
+    <link rel="manifest" href="images/x-icon/site.webmanifest" />
+    <link rel="stylesheet" href="css/styleJesse.css" />
+
+    <!-- AOS animation code  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="aos-master/dist/aos.css" />  --> 
+
+    <!-- Slider with animation code -->	  
+    <link rel="stylesheet" href="css/three-dots.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />  
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="images/x-icon/A.png" alt="favicon" height="32" width="32" />
+          </a>
+        </div>	
+    <div class="menu">  
+		
+			    <section class="container"> 
+		<!-- THIS IS FOR TESTING ONLY -->	
+			        <a href="home.html"  target="_self" alt="HOME" class="banner-menu">HOME </a>
+		<!-- END THIS IS FOR TESTING ONLY -->				
+
+        </section>
+		
+        <div class="menu">
+		      <button class="wallet-btn btn" id="connectWallet" >
+            <span>Connect Wallet</span> 
+          </button>
+        </div>
+      </div>
+	</div>
+  </header>
+
+    <div class="main-wrapper">
+      <section class="container not-connected">
+        <div>
+          <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
+          <h1 id="welcomeH1">Welcome to the Bored Ape Cannabis Club NFT Project!</h1>
+          <p id="welcomeP">
+            The Bored Ape Cannabis Club NFT Project is a decentralized, open-source project that
+            aims to demonstrate how to develop and launch your own NFT
+            Collection. Follow step by step on the
+          </p>
+          <br />
+        </div>
+      </section>
+
+     <!-- <section class="container countdown-container"> I think this is unique to cbirdz -->
+       <section class="container">
+         <div class="owner-status">   <!-- relpaced "countown card" -->
+              <div id="countdown">
+            <ul class="count-down" data-date="Apr 3, 2022 13:00:45 PM UTC">
+              <li class="clock-item">
+                <span class="count-number days">20</span>
+                <p class="count-text">Days</p>
+              </li>
+              <li class="clock-item">
+                <span class="count-number hours">20</span>
+                <p class="count-text">Hour</p>
+              </li>
+              <li class="clock-item">
+                <span class="count-number minutes">20</span>
+                <p class="count-text">Min</p>
+              </li>
+              <li class="clock-item">
+                <span class="count-number seconds">20</span>
+                <p class="count-text">Sec</p>
+              </li>
+            </ul>
+            <h2 id="subHeading">Pre-Sale Countdown</h2>
+          </div>
+          <h1 id="mainHeading">NFT Drop Coming Soon!!</h1>
+          <p id="mainText">
+             A new batch of Apes will be available very soon!
+          </p>
+          <div id="mintContainer" class="mint-container hidden">
+            <div class="info-container">
+              <div>
+                <h3>Supply</h3>
+                <p id="totalSupply">10000</p>
+              </div>
+              <div>
+                <h3>Price Per Mint</h3>
+                <p id="pricePerMint">0.05 ETH</p>
+              </div>
+              <div>
+                <h3>Max</h3>
+                <p id="maxPerMint">10 per wallet</p>
+              </div>
+            </div>
+            <div class="mint-qty">
+              <span>
+                <button class="input-number-decrement btn" id="mintDecrement">–</button>
+                <input
+                  id="mintInput"
+                  class="input-number btn"
+                  type="number"
+                  value="1"
+                  min="1"
+                  max="5"
+                />
+                <button class="input-number-increment btn" id="mintIncrement">+</button>
+              </span>
+              <button id="setQtyMax" class="btn">SET MAX</button>
+            </div>
+            <div class="total-price-container">
+              <h3>Total</h3>
+              <p id="totalPrice">.001 ETH</p>
+            </div>
+            <button id="mintButton" class="hero-btn btn mint-btn">Mint</button>
+          </div>
+        </div>
+        <div class="minted-container card show-card hidden">
+          <h1>🎉</h1>
+          <h2>Minted!</h2>
+          <p>Here's your trasaction link:</p>
+          <a
+            id="mintedTxnBtn"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="hero-btn btn">View Transaction</button>
+          </a>
+          <p>View it in the collection:</p>
+          <a
+            id="mintedLinkBtn"
+            href="https://testnets.opensea.io/collection/boredapecannabisclub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="hero-btn btn">View Collection</button>
+          </a>
+        </div>
+
+
+      <section>
+        <!-- This needs to be here to prevent an error by app.js -->
+            <!-- <div id="spinner" class="dot-spin"></div>  --> 
+            <div id="spinner"></div>
+      
+            <div class="splide-2" align="center">
+              <div class="splide__track">
+                <ul class="splide__list" >
+                  <li class="splide__slide">
+                    <img src="images/slider/1.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/2.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/3.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/4.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/5.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/6.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/7.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/slider/8.png" alt="slider image" height="98" width="98"/>
+                   </li>
+                   <li class="splide__slide">
+                    <img src="images/slider/9.png" alt="slider image" height="98" width="98"/>
+                  </li>
+                </ul>
+              </div>
+             </div>
+        </section>
+   
+
+      </section>
+    </div>
+
+
+    <script src="js/metamask-onboarding.bundle.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      AOS.init({
+        disable: 'phone'
+      });
+    </script>
+  </body>
+</html>
+
