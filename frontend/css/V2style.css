@@ -5,8 +5,6 @@
 /* GLOBAL STYLES */
 
 :root {
-/*  This is the old colour pallet
-
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Arvo", serif;
   --font-code: "Roboto", monospace;
@@ -16,28 +14,7 @@
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
   --header-shadow: var(--accent-color) 0px 0px 5px;
-  --card-shadow: var(--accent-color) 0px 0px 20px; */
-
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Arvo", serif;
-  --font-code: "Roboto", monospace;
-  --bg-color: #0000000;
-  --bg-color-transparent: #00163f80;
-  --font-color: #ffffff;
-  --btn-bg-color: #B7D7D3;
-  --accent-color: #7A97AB;
-  --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
-
-	/* Colour Pallet for High Flight  */
-	  --highflight-black:  #000000;
-    --blue: #7A97AB;
-    --light-blue: #B7C7D3;
-    --sage: #7A9B90;
-	  --eggplant: #84657A;
-	  --tan: #BC955C;
- 	  --rust: #DE6B30;
-
 }
 
 * {
