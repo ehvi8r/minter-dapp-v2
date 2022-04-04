@@ -1,70 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CodeCats</title>
+    <title>Test BACC</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/x-icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/x-icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/x-icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/x-icon/site.webmanifest" />
-    <link rel="stylesheet" href="css/three-dots.min.css" />
-    <link rel="stylesheet" href="css/splide.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="/">
-            <img src="images/x-icon/favicon-32x32.png" alt="logo" />
-          </a>
-        </div>
-        <div class="menu">
-          <a
-            href="https://discord.gg/A9CnsVzzkZ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/discord.webp" alt="Discord" />
-          </a>
-          <a
-            href="https://twitter.com/codeSTACKr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/twitter.webp" alt="Twitter" />
-          </a>
-          <a
-            href="https://opensea.io/collection/codecats"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/opensea.webp" alt="Opensea" />
-          </a>
-          <button class="wallet-btn btn" id="connectWallet">
-            <span>Connect Wallet</span>
-          </button>
-        </div>
-      </div>
-    </header>
+<!-- BACC favicon  -->
+<link rel="icon" href="images/x-icon/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png" />
+<link rel="manifest" href="images/x-icon/site.webmanifest" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- AOS animation code  -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- <link rel="stylesheet" href="aos-master/dist/aos.css" />  --> 
+
+<!-- Slider with animation code -->	  
+<link rel="stylesheet" href="css/three-dots.min.css" />
+<link rel="stylesheet" href="css/splide.min.css" />
+
+</head>
+
+<body>
+<!-- <style>A {text-decoration: none;} </style>  -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="/">
+        <img src="images/x-icon/A.png" alt="favicon" height="32" width="32" />
+      </a>
+    </div>
+
+<div class="menu">  
+  <section class="container"> 
+<!-- THIS IS FOR TESTING ONLY -->	
+      <a href="MINTER.html" target="_self" alt="MINTER" class="banner-menu">MINTER </a>
+          <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+<!-- END THIS IS FOR TESTING ONLY -->				
+      <a href="home.html/#About" alt="about" class="banner-menu">about </a>
+          <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+      <a href="home.html/#Team" alt="team" class="banner-menu">team </a>
+          <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+      <a href="home.html/#Collection" alt="collection" class="banner-menu">collection </a>
+          <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+      <a href="home.html/#Roadmap" alt="roadmap" class="banner-menu">roadmap </a>
+          <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+      <a href="home.html/#FAQ" class="banner-menu">faq </a>
+    </section>
+
+    <div class="menu">
+      <a
+        href="https://discord.gg/j5vAN4md"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="images/header/discord.png" alt="Discord" />
+      </a>
+      <a
+        href="https://twitter.com/BoredApe_420"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="images/header/twitter.png" alt="Twitter" />
+      </a>
+      <a
+        href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="images/header/reddit.png" alt="Reddit" />
+      </a>
+      <a
+        href="https://t.me/BoredApeCannabisClub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="images/header/telegram.png" alt="Telegram" />
+      </a>
+      <a
+        href="https://opensea.io/collection/theboredapecannabisclub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="images/header/opensea.png" alt="Opensea" />
+      </a>	
+      <button class="wallet-btn btn" id="connectWallet" >
+        <!-- <button class="banner-menu" id="connectWallet" > -->  
+        <span>Connect Wallet</span> 
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Bored Ape Cannabis Club Heading-->
+<div class="owner-status">
+<p><!-- <h2>The Bored Ape Cannabis Club</h2> --><br></p>
+<p>
+  <img src="images/banners-and-logos/BACCNewLogo.png" alt="Logo" Height="100" Length="200"/><br>
+</p><br>
+<p>
+  <img src="images/banners-and-logos/BACCBannerM1000x278.png" alt="banner" width="1000" height="278"/>
+</p>
+</div>	
+</header>
 
     <section class="container not-connected">
       <div>
