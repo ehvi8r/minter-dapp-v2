@@ -84,6 +84,21 @@ header .container {
   align-items: center;
 }
 
+.banner-menu {
+  display: flex;                      /* added top menu bar for white text no underline */
+  font-size: 15px;                    /* 0.5rem; */
+  line-height: 1;   
+    color: #B7C7D3;         
+  gap: 2rem;
+  align-items: center;
+  /* text-decoration: none; */
+  transform: translateY(4px);   /* added to give a hover effect */
+ }
+.banner-menu:hover {
+ box-shadow: none;
+ color:#B0AFB1;
+}
+
 /* NOT CONNECTED */
 .not-connected {
   align-items: center;
