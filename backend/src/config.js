@@ -78,7 +78,9 @@ const METADATA_UPDATABLE = true; // set to true for testing
 const OWNER_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // Contract Owner and Treasury Owner (keep the sqme)
 const TREASURY_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
 const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. ** CANNOT BE UPDATED! **
-// ** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created.
+// **************************************************************************************************************
+// ****** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created ******.
+// **************************************************************************************************************
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH (set to .001 for testing), Polygon = MATIC. ** CANNOT BE UPDATED! **  Check MATIC prices on www.coionmarketcap.com
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
@@ -108,7 +110,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x91932159EeB1F5653c9c60C62B530A4d421e09F8"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = [""]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x91932159EeB1F5653c9c60C62B530A4d421e09F8"]; // only update if you want to manually set the whitelisted addresses
 //                              April 09 2022 at 10:00 am local time Launch date whitelisting available right away
 
 // ** OPTIONAL **
