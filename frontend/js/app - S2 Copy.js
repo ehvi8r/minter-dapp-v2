@@ -1,7 +1,15 @@
 let accounts;
 
+// Updated 27 MAr 2022 MM //
+
 // METAMASK CONNECTION
 window.addEventListener("DOMContentLoaded", async () => {
+  // init faq
+  // const firstFaq = document.getElementById('firstFaq');
+  // setTimeout(() => {
+  //   firstFaq.click();
+  // }, 500);
+
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
   const welcomeP = document.getElementById("welcomeP");
@@ -32,26 +40,26 @@ window.addEventListener("DOMContentLoaded", async () => {
 //  pagination: false,
 //   autoplay: true,
 //   direction: 'ttb',
-//   height: "calc(100vh - 90px)",
+//   height: "100%",
 //   width: '30vw',
 //    // autoHeight: true, (This was already commented out)
 //  });
 //  splide.mount();
 
-const splideTwo = new Splide(".splide-2", {
-  type: "loop",
-  arrows: false,
-  perMove: 3,
-  pagination: false,
-  autoplay: true,
-  perPage: 5,
-  breakpoints: {
-    768: {
-      perPage: 3,
+  const splideTwo = new Splide(".splide-2", {
+    type: "loop",
+    arrows: false,
+    perMove: 3,
+    pagination: false,
+    autoplay: true,
+    perPage: 5,
+    breakpoints: {
+      768: {
+        perPage: 3,
+      },
     },
-  },
-});
-splideTwo.mount();
+  });
+  splideTwo.mount();
 
   updateConnectStatus();
   if (MetaMaskOnboarding.isMetaMaskInstalled()) {
@@ -69,14 +77,14 @@ const updateConnectStatus = async () => {
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
     onboardButton.innerText = "Install MetaMask!";
+    // HIDE SPINNER
+    spinner.classList.add('hidden');
+    notConnected.classList.remove('hidden');
+    notConnected.classList.add('show-not-connected');
     onboardButton.onclick = () => {
       onboardButton.innerText = "Connecting...";
       onboardButton.disabled = true;
       onboarding.startOnboarding();
-      // HIDE SPINNER
-      spinner.classList.add('hidden');
-      notConnected.classList.remove('hidden');
-      notConnected.classList.add('show-not-connected');
     };
   } else if (accounts && accounts.length > 0) {
     onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
@@ -88,7 +96,10 @@ const updateConnectStatus = async () => {
     // SHOW SPINNER
     spinner.classList.remove('hidden');
     window.contract = new web3.eth.Contract(abi, contractAddress);
-    loadInfo();
+    // loadInfo();
+    spinner.classList.add('hidden'); // remove later
+    notConnected.classList.remove('hidden'); // remove later
+    notConnected.classList.add('show-not-connected'); // remove later
   } else {
     onboardButton.innerText = "Connect MetaMask!";
     // HIDE SPINNER
@@ -110,7 +121,10 @@ const updateConnectStatus = async () => {
           window.address = accts[0];
           accounts = accts;
           window.contract = new web3.eth.Contract(abi, contractAddress);
-          loadInfo();
+          // loadInfo();
+          spinner.classList.add('hidden'); // remove later
+          notConnected.classList.remove('hidden'); // remove later
+          notConnected.classList.add('show-not-connected'); // remove later
         });
     };
   }
@@ -225,6 +239,9 @@ async function loadInfo() {
 
   const clockdiv = document.getElementById("countdown");
   clockdiv.setAttribute("data-date", startTime);
+
+  // console.log(data-date);
+
   countdown();
 
   // HIDE SPINNER
