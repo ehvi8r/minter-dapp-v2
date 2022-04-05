@@ -24,19 +24,19 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-// This is the vertical slider which I don't use
-// const splide = new Splide(".splide", {
-//  type: "loop",
-//  arrows: false,
-//  perMove: 3,
-//  pagination: false,
-//   autoplay: true,
-//   direction: 'ttb',
-//   height: "calc(100vh - 90px)",
-//   width: '30vw',
-//    // autoHeight: true, (This was already commented out)
-//  });
-//  splide.mount();
+// This is the vertical slider which I don't want to use
+const splide = new Splide(".splide", {
+type: "loop",
+arrows: false,
+perMove: 3,
+pagination: false,
+autoplay: true,
+direction: 'ttb',
+height: "calc(100vh - 90px)",
+width: '30vw',
+autoHeight: true, 
+});
+splide.mount();
 
 const splideTwo = new Splide(".splide-2", {
   type: "loop",
