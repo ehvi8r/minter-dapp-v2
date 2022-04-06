@@ -501,7 +501,7 @@ End From CB */
   position: absolute;
   height: calc(100% - 20px);
   width: 4px;
-  background: var(--blue-bg-color);
+  background: var(--blue);
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
@@ -518,7 +518,7 @@ End From CB */
 }
 .wrapper .row section {
   flex: initial;
-  background: var(--blue-bg-color);
+  background: var(--blue);
   border-radius: 5px;
   width: calc(50% - 40px);
   padding: 20px;
@@ -529,7 +529,7 @@ End From CB */
   content: "";
   height: 15px;
   width: 15px;
-  background: var(--blue-bg-color);
+  background: var(--blue);
   top: 28px;
   z-index: -1;
   transform: rotate(45deg);
@@ -543,16 +543,16 @@ End From CB */
 .row section .icon,
 .center-line .scroll-icon {
   position: absolute;
-  background: var(--light-blue);
+  background: var(--blue);
   height: 40px;
   width: 40px;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #fff;
+  color: var(--font-color);
   font-size: 17px;
   font-style: normal;
-  box-shadow: 0 0 0 4px var(--blue-bg-color), inset 0 2px 0 rgba(0, 0, 0, 0.08),
+  box-shadow: 0 0 0 4px var(--blue), inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .center-line .scroll-icon {
@@ -578,10 +578,10 @@ End From CB */
 .row section .details .title {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: var(--font-color);
 }
 .row section .details span:last-of-type {
-  color: var(--bg-color);
+  color: var(--font-color);
   font-weight: bold;
 }
 .row section p {
@@ -589,8 +589,8 @@ End From CB */
 }
 .row section .bottom a {
   text-decoration: none;
-  background: var(--btn-bg-color);;
-  color: var(--bg-color);;
+  background: var(--blue);
+  color: var(--font-color);
   padding: 7px 15px;
   border-radius: 5px;
   font-weight: 400;
@@ -607,8 +607,8 @@ End From CB */
   z-index: 1;
 }
 .roadmap-v2 p {
-  background: var(--blue-bg-color);
-  color: #fff;
+  background: var(--blue);
+  color: var(--font-color);
   font-size: 1.5rem;
   border-radius: 5px;
   padding: 1rem 2rem;
