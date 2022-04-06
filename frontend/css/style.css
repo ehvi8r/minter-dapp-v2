@@ -407,7 +407,7 @@ End From CB */
   padding: 5rem 0;
   background: var(--bg-color);
   text-align: left;
-  color: var(--bg-color);
+  color: var(--accent-color);
 }
 .bacc-content h1 {
   text-shadow: 2px 2px 0 var(--font-color);
