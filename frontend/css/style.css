@@ -407,10 +407,10 @@ End From CB */
   padding: 5rem 0;
   background: var(--bg-color);
   text-align: left;
-  color: var(--font-color);
+  color: var(--light-blue);
 }
 .bacc-content h1 {
-  text-shadow: 2px 2px 0 var(--font-color);
+  text-shadow: 2px 2px 0 var(--blue);
   font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
@@ -432,7 +432,7 @@ End From CB */
 .bacc-content span img {
   width: 20vw;
   margin-left: 1rem;
-  box-shadow: 2px 2px 4px var(--font-color);;
+  box-shadow: 2px 2px 4px var(--blue);;
 }
 
 .collabs {
