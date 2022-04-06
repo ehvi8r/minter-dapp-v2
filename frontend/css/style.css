@@ -422,6 +422,7 @@ End From CB */
   line-height: 1.8;
   font-family: var(--font-secondary);
   margin: 1rem 0;
+  background: var(--font-color);
 }
 .bacc-content blockquote {
   font-size: 1.1rem;
