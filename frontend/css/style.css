@@ -458,13 +458,13 @@ End From CB */
 /* TEAM */
 
 .team {
-  background: var(--light-blue);
+  background: var(--bg-color);
   text-align: center;
   padding: 1rem 0;
 }
 .team h1 {
   color: var(--light-blue);
-  text-shadow: 1px 1px 0 var(--font-color);
+  text-shadow: 1px 1px 0 var(--light-blue);
   /* font-style: italic; */
   margin: 2rem 0;
   font-size: 2.5rem;
