@@ -455,6 +455,33 @@ End From CB */
   filter: hue-rotate(180deg);
 }
 
+/* TEAM */
+
+.team {
+  background: var(--light-blue);
+  text-align: center;
+  padding: 1rem 0;
+}
+.team h1 {
+  color: var(--light-blue);
+  text-shadow: 1px 1px 0 var(--font-color);
+  /* font-style: italic; */
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+.team h2 {
+  color: var(--light-blue);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.team .row {
+  display: flex;
+}
+.team .row img {
+  width: 100%;
+  padding: 0 1rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
