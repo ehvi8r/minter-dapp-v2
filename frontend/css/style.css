@@ -31,9 +31,9 @@
 
 	/* Colour Pallet for High Flight  */
 	  --highflight-black:  #000000;
-      --blue: #7A97AB;
-      --light-blue: #B7C7D3;
-      --sage: #7A9B90;
+    --blue: #7A97AB;
+    --light-blue: #B7C7D3;
+    --sage: #7A9B90;
 	  --eggplant: #84657A;
 	  --tan: #BC955C;
  	  --rust: #DE6B30;
@@ -399,6 +399,60 @@ End From CB */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(3);
+}
+
+/* BACC CONTENT */
+
+.bacc-content {
+  padding: 5rem 0;
+  background: var(--bg-color);
+  text-align: left;
+  color: var(--bg-color);
+}
+.bacc-content h1 {
+  text-shadow: 2px 2px 0 var(--font-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+}
+.bacc-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: var(--font-secondary);
+  margin: 1rem 0;
+}
+.bacc-content blockquote {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.bacc-content .flex {
+  display: flex;
+  align-items: center;
+}
+.bacc-content span img {
+  width: 20vw;
+  margin-left: 1rem;
+  box-shadow: 2px 2px 4px var(--font-color);;
+}
+
+.collabs {
+  display: flex;
+  justify-content: center;
+}
+.collabs h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.collabs .collab {
+  height: 15rem;
+  margin: 3rem;
+}
+.collabs img {
+  height: 100%;
+  border-radius: 10px;
+}
+.collabs .collab:last-of-type img {
+  filter: hue-rotate(180deg);
 }
 
 /* MEDIA QUERIES */
