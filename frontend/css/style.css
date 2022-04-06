@@ -366,7 +366,6 @@ section {
 /*  max-height: 100vh; */
 }
 
-/* old
 .splide__slide {
   border: var(--accent-color) solid;
   border-width: 5px 10px;
@@ -375,9 +374,8 @@ section {
 .splide__slide img {
   width: 100%;
 }
- end old*/
 
-/* from CB */
+/* From CB (not working)
 .splide .splide__track {
   max-height: 100vh;
 }
@@ -393,6 +391,7 @@ section {
 .splide-2 .splide__slide img {
   width: 20vw;
 }
+End From CB */
 
 /* SPINNER */
 .dot-spin {
