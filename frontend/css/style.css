@@ -31,9 +31,9 @@
 
 	/* Colour Pallet for High Flight  */
 	  --highflight-black:  #000000;
-    --blue: #7A97AB;
-    --light-blue: #B7C7D3;
-    --sage: #7A9B90;
+      --blue: #7A97AB;
+      --light-blue: #B7C7D3;
+      --sage: #7A9B90;
 	  --eggplant: #84657A;
 	  --tan: #BC955C;
  	  --rust: #DE6B30;
@@ -363,8 +363,10 @@ section {
   top: 90px;
   left: 5rem;
   z-index: -1;
+/*  max-height: 100vh; */
 }
 
+/* old
 .splide__slide {
   border: var(--accent-color) solid;
   border-width: 5px 10px;
@@ -372,6 +374,24 @@ section {
 
 .splide__slide img {
   width: 100%;
+}
+ end old*/
+
+/* from CB */
+.splide .splide__track {
+  max-height: 100vh;
+}
+.splide .splide__slide {
+  border: var(--accent-color) solid;
+  border-width: 5px 10px;
+}
+
+.splide .splide__slide img {
+  width: 100%;
+}
+
+.splide-2 .splide__slide img {
+  width: 20vw;
 }
 
 /* SPINNER */
