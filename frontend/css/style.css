@@ -62,6 +62,7 @@ body {
   padding: 1rem 2rem;
   justify-content: center;
   overflow: hidden;
+  background: var(--rust);
 }
 
 /* HEADER */
@@ -101,6 +102,7 @@ header .container {
   min-height: calc(100vh - 90px);
   display: flex;
   align-items: center;
+  background: var(--eggplant);
 }
 
 /* NOT CONNECTED */
