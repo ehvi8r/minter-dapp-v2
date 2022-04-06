@@ -181,7 +181,7 @@ header .container {
 .ebtn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--bg-color);
+  background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
   font-style: italic;
