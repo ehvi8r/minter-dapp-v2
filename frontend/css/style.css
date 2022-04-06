@@ -476,6 +476,7 @@ End From CB */
 }
 .team .row {
   display: flex;
+  align-items: center;
 }
 .team .row img {
   width: 100%;
