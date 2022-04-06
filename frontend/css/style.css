@@ -356,7 +356,7 @@ section {
   margin: 1rem 0;
 }
 
-/* SLIDDER */
+/* SLIDER */
 
 .splide {
   position: absolute;
@@ -367,7 +367,7 @@ section {
 }
 
 .splide__slide {
-  border: var(--accent-color) solid;
+  border: var(--bg-color-transparent) solid;
   border-width: 5px 10px;
 }
 
