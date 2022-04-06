@@ -405,7 +405,8 @@ End From CB */
 
 .bacc-content {
   padding: 5rem 0;
-  background: var(--bg-color);
+/*  background: var(--bg-color);  */
+  background: var(--rust);
   text-align: left;
   color: var(--light-blue);
 }
