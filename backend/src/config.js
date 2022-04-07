@@ -1,9 +1,15 @@
-// ** Notes for Polygon Production:
-//    1. Change 'rinkeby' to 'polygon'
-//    2. Change wallet address/owner address/treasury address
-//    3. Change contract, remove rinkeby contract line 98 and uncomment line 97
-//    4. Change GrowEditionSize numbers for production
-//    5. Change public mint start date to XX April 
+// ******************************************************************************************************************
+// ** Notes for Polygon Production:                                                                                 *
+//    1. Change 'rinkeby' chain to 'polygon'                                                                        *
+//    2. Change wallet address/owner address/treasury address to production address                                 *
+//    3. Change mint price                                                                                          *
+//    4. Change ETH price in index.html and home.html                                                               *
+//    4. Change GrowEditionSize numbers for production                                                              *
+//    5. Change public mint start date to XX April (and other dates as required)                                    *
+//    6. Add contract address from \backend\contract to frontend\js\constants                                       *
+//    7. Change frontend\js\constants chain to 'polygon'                                                            *
+//    7. Remove testnets. in opensea links in index.html and home.html                                              *
+// ******************************************************************************************************************
 
 require('dotenv').config();
 const basePath = process.cwd();
@@ -79,9 +85,14 @@ const OWNER_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // Contract
 const TREASURY_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
 const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. ** CANNOT BE UPDATED! **
 // **************************************************************************************************************
-// ****** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created ******.
+// ****** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created ******
+// ****** .05 ETH =~ 100 MATIC                                                                             ******
+// ****** CANNOT BE UPDATED once Contract Launched! **  Check MATIC prices on www.coionmarketcap.com       ******
+// ****** FOR TESTING SET PRICE TO .001                                                                    ******
+// ****** FOR PRODUCTION SET PRICE TO 100                                                                  ******
 // **************************************************************************************************************
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH (set to .001 for testing), Polygon = MATIC. ** CANNOT BE UPDATED! **  Check MATIC prices on www.coionmarketcap.com
+const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH (set to .001 for testing), Polygon = MATIC.  ** 
+// **************************************************************************************************************
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
