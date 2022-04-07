@@ -1,5 +1,7 @@
 // replace with contract address from \backend\build\contract 
-const contractAddress = "0xfBd22dE0A49A7C1Ae0D53F040b171FC30a8d9b15"; //Replace with your own contract address
+// New Contract Generated 22-04-07 with ETH price at .001
+const contractAddress = "0x9AD68e33d2838c0B211e8d8AEBc2834279EB61e1"; //Replace with your own contract address                       
+
 const chain = "rinkeby"; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
