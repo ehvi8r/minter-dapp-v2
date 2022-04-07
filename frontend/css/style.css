@@ -182,7 +182,7 @@ header .container {
   display: inline-block;
   padding: 1rem 2rem;
   background: var(--rust);
-  color: var(--accent-color);
+  color: var(--font-color);
   font-family: var(--font-secondary);
   font-style: italic;
   font-weight: bold;
