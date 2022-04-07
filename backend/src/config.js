@@ -15,7 +15,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "THE BORED APE CANNABIS CLUB";
-const description = "The Bored Ape Cannabis Club NFT Collection for Cannabis Connoiseurs  /n Flying High with Bored Apes";
+const description = "The Bored Ape Cannabis Club NFT Collection /n Flying High with Bored Apes";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -87,12 +87,12 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 
 // Dates:
-//         Whitelist:   16 Apr 2022  (Whitelist is the Presale Date)
+//         Whitelist:   11 Apr 2022  (Whitelist is not a date set in the code)
 //         Presale:     16 Apr 2022
-//         Public Sale: 23 Apr 2022
+//         Public Sale: 20 Apr 2022
 //
 // ** For TESTING set the Dates to:
-//         Whitelist:   1 April 2022  (Whitelist is the Presale Date)
+//         Whitelist:   1 April 2022  (Whitelist is not a date set in the code)
 //         Presale:     1 April 2022
 //         Public Sale: 2 April 2022
 //
