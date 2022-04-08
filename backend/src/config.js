@@ -2,7 +2,7 @@
 // ** Notes for Polygon Production:                                                                                 *
 //    1. Change 'rinkeby' chain to 'polygon'                                                                        *
 //    2. Change wallet address/owner address/treasury address to production address                                 *
-//    3. Change mint price                                                                                          *
+//    3. Change mint price and freeze Metadata                                                                                        *
 //    4. Change ETH price in index.html and home.html                                                               *
 //    4. Change GrowEditionSize numbers for production                                                              *
 //    5. Change public mint start date to XX April (and other dates as required)                                    *
@@ -21,7 +21,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "THE BORED APE CANNABIS CLUB";
-const description = "The Bored Ape Cannabis Club NFT Collection /n Flying High with Bored Apes";
+const description = "The Bored Ape Cannabis Club NFT Collection, Flying High with Bored Apes";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
