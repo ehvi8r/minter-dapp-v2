@@ -10,7 +10,8 @@
 //    8. Add contract address from \backend\contract to frontend\js\constants                                       *
 //    9. Change frontend\js\constants chain to 'polygon'                                                            *
 //    10. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code)                *
-//    11. Remove testnets. in opensea links in index.html and home.html                                             *
+//    11. Change app.js PRE-SALE MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan                         *
+//    12. Remove testnets. in opensea links in index.html and home.html                                             *
 // ******************************************************************************************************************
 
 require('dotenv').config();

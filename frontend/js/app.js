@@ -372,6 +372,11 @@ async function mint() {
       const presaleMintTransaction = await contract.methods
         .presaleMint(amount, merkleJson)
         .send({ from: window.address, value: value.toString() });
+ // **********************************************************************  IMPORTANT
+ // Have to change for Polygon Mainnet
+ // For Polygon: change chain to 'polygon'
+ //             change url to 'https://polygonscan.com/tx/
+ // *********************************************************************************
       if(presaleMintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
