@@ -7,8 +7,9 @@
 //    4. Change GrowEditionSize numbers for production                                                              *
 //    5. Change public mint start date to XX April (and other dates as required)                                    *
 //    6. Add contract address from \backend\contract to frontend\js\constants                                       *
-//    7. Change frontend\js\constants chain to 'polygon'                                                            *
-//    7. Remove testnets. in opensea links in index.html and home.html                                              *
+//    7. Change frontend\js\constants chain to 'polygon' 
+//    8. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code)                                                           *
+//    9. Remove testnets. in opensea links in index.html and home.html                                              *
 // ******************************************************************************************************************
 
 require('dotenv').config();

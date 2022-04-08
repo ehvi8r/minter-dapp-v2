@@ -330,7 +330,12 @@ async function mint() {
       const mintTransaction = await contract.methods
         .mint(amount)
         .send({ from: window.address, value: value.toString() });
-      if(mintTransaction) {
+ // **********************************************************************  IMPORTANT
+ // Have to change for Polygon Mainnet
+ // For Polygon: change chain to 'polygon'
+ //             change url to 'https://polygonscan.com/tx/
+ // *********************************************************************************
+        if(mintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
