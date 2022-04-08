@@ -1,15 +1,16 @@
 // ******************************************************************************************************************
 // ** Notes for Polygon Production:                                                                                 *
 //    1. Change 'rinkeby' chain to 'polygon'                                                                        *
-//    2. Change wallet address/owner address/treasury address to production address                                 *
-//    3. Change mint price and freeze Metadata                                                                                        *
-//    4. Change ETH price in index.html and home.html                                                               *
-//    4. Change GrowEditionSize numbers for production                                                              *
-//    5. Change public mint start date to XX April (and other dates as required)                                    *
-//    6. Add contract address from \backend\contract to frontend\js\constants                                       *
-//    7. Change frontend\js\constants chain to 'polygon' 
-//    8. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code)                                                           *
-//    9. Remove testnets. in opensea links in index.html and home.html                                              *
+//    2. Change .env for new NFTPort API if Required                                                                *
+//    3. Change wallet address/owner address/treasury address to production address                                 *
+//    4. Change mint price and freeze Metadata                                                                      *
+//    5. Change ETH price in index.html and home.html                                                               *
+//    6. Change GrowEditionSize numbers for production                                                              *
+//    7. Change public mint start date to XX April (and other dates as required)                                    *
+//    8. Add contract address from \backend\contract to frontend\js\constants                                       *
+//    9. Change frontend\js\constants chain to 'polygon'                                                            *
+//    10. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code)                *
+//    11. Remove testnets. in opensea links in index.html and home.html                                             *
 // ******************************************************************************************************************
 
 require('dotenv').config();
