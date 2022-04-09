@@ -134,3 +134,21 @@ $ npm run refresh_os --start=1 --end=100
 - Both the `--start` and `--end` flags are required.
 
 ## Reference the [video](https://youtu.be/cLB7u0KQFIs) for more details.
+
+NOTES for migrating from testing on Rinkeby to production on Polygon:
+
+// ***************************************************************************************************
+// ** NOTES for migrating from testing on Rinkeby to production on Polygon:                          *
+//    1. Change in config.js change 'rinkeby' chain to 'polygon'                                     *
+//    2. Change .env for new NFTPort API if Required                                                 *
+//    3. Change in config.js change wallet address/owner address/treasury address to production      *
+//    4. Change in config.js mint price to 100 (MATIC) and freeze metadata METADATA-UPDATEABLE=false *
+//    5. Change ETH price in index.html and home.html (.05 ETH =~100 MATIC)                          *
+//    6. Change GrowEditionSize numbers for production                                               *
+//    7. Change public mint start date to XX April (and other dates as required)                     *
+//    8. Add contract address from \backend\contract to frontend\js\constants                        *
+//    9. Change frontend\js\constants chain to 'polygon'                                             *
+//    10. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code) *
+//    11. Change app.js PRE-SALE MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan          *
+//    12. Remove testnets. in opensea links in index.html and home.html                              *
+// ***************************************************************************************************
