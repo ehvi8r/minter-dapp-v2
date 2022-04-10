@@ -135,7 +135,7 @@ $ npm run refresh_os --start=1 --end=100
 
 ## Reference the [video](https://youtu.be/cLB7u0KQFIs) for more details.
 
-NOTES for migrating from testing on Rinkeby to production on Polygon:
+### NOTES for migrating from testing on Rinkeby to production on Polygon:
 
 // ***************************************************************************************************
 // ** NOTES for migrating from testing on Rinkeby to production on Polygon:                          *
