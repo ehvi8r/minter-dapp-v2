@@ -252,7 +252,7 @@
 <!-- Enter Site Section	-->
 <section class="bacc-content">
   <div class="container">
-    <!--- This is here for testin gonly -->
+    <!--- This is here for testing only -->
      <P> We are currently on Rinkeby Testnet, so you will have to have your MetaMask wallet on Rinkeby
        Test Network, and you'll have to have an account setup on www.testnets.opensea.io.  
        You can get test ETH from the Rinkeby faucet here:  https://faucets.chain.link/rinkeby
@@ -263,6 +263,13 @@
     <!-- <img src="images/banners-and-logos/ape.png" alt="spacer" width="3" height="1" /> --> 
     <h3>The Bored Ape Cannabis Club!</h3>
     </a>
+    <!-- Add button for phones if top menu button not showing -->
+    <p>
+      <button class="wallet-btn btn" id="connectWallet">
+        <span>Connect Wallet</span>
+      </button>
+    </p>
+    <!-- end add button for phones... -->
   </div>
 </section>
 <!-- End Enter Site Section -->
@@ -348,5 +355,11 @@
     <script src="js/constants.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      AOS.init({
+        disable: 'phone'
+      });
+    </script>
+
   </body>
 </html>

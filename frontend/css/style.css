@@ -91,12 +91,13 @@ header .container {
   gap: 2rem;
   align-items: center;
   text-decoration: none; 
-  transform: translateY(4px);   /* added to give a hover effect */
+  transform: translateY(4px);        /* added to give a hover effect */
  }
 .banner-menu:hover {
  box-shadow: none;
  color:#B0AFB1;
 }
+
 .main-wrapper {
   min-height: calc(100vh - 90px);
   display: flex;
@@ -668,7 +669,6 @@ End From CB */
 
 /* FAQ */
 
-
 .faq {
   padding-bottom: 3rem;
 }
@@ -807,6 +807,13 @@ End From CB */
     padding: 1rem;
     font-size: 13px;
   }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+/* padding: 1rem 2rem;  */
+  background: var(--accent-color);
 }
 
 /* UTILITIES */
