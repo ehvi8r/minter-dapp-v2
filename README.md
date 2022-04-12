@@ -5,6 +5,7 @@
 - [RESOURCES](#resources)
 - [INSTALLATION](#installation)
 - [COMMANDS](#commands)
+- [MIGRATION](#notes-for-migrating-from-testing-on-rinkeby-to-production-on-polygon)
 
 ## RESOURCES
 
@@ -145,7 +146,7 @@ $ npm run refresh_os --start=1 --end=100
 //    4. Change in config.js mint price to 100 (MATIC) and freeze metadata METADATA-UPDATEABLE=false *
 //    5. Change ETH price in index.html and home.html (.05 ETH =~100 MATIC)                          *
 //    6. Change GrowEditionSize numbers for production                                               *
-//    7. Change public mint start date to XX April (and other dates as required)                     *
+//    7. Change public mint start date to XX Month (and other dates as required)                     *
 //    8. Add contract address from \backend\contract to frontend\js\constants                        *
 //    9. Change frontend\js\constants chain to 'polygon'                                             *
 //    10. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code) *
