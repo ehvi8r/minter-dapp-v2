@@ -813,7 +813,7 @@ End From CB */
 footer {
   text-align: center;
 /* padding: 1rem 2rem;  */
-  background: var(--accent-color);
+  background: var(--bg-color);
 }
 
 /* UTILITIES */
