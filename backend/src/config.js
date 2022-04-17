@@ -45,16 +45,18 @@ const layerConfigurations = [
       ],
     },
  
-    {
+    // The Genesis Apes will be created separately on Opensea
+    // {
     // Hand made Genesis Apes
-    // There are only 18 Genesis Apes, and each is set to #1 so hopefully this works to generate one of each.
-    // Note: add 18 to the growEdition # above, should be 5500 for polygon/Opensea.io Mainnet
-       growEditionSizeTo: 20,
-       layersOrder: [
-      { name: "Genesis" },
-      { name: "HandMade" },
-    ],
-    },
+    // There are only 20 Genesis Apes, and each is set to #1 so hopefully this works to generate one of each.
+    // Note: add 20 to the growEdition # above, should be 5500 for polygon/Opensea.io Mainnet
+    //   growEditionSizeTo: 20,
+    //   layersOrder: [
+    //  { name: "Genesis" },
+    //  { name: "HandMade" },
+    // ],
+    // },
+
 ];
 
 const shuffleLayerConfigurations = true;  // This will keep the Genesis collection separate from the rest of the collection
@@ -68,7 +70,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://priceless-morse-1afff4.netlify.app/", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://www.theboredapecannabisclub.com/", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -157,7 +159,7 @@ try {
 const solanaMetadata = {
   symbol: "BACC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://priceless-morse-1afff4.netlify.app/",
+  external_url: "https://www.theboredapecannabisclub.com/",
   creators: [
     {
       address: "0x91932159EeB1F5653c9c60C62B530A4d421e09F8",
