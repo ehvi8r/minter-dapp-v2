@@ -24,7 +24,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "THE BORED APE CANNABIS CLUB";
+// const namePrefix = "THE BORED APE CANNABIS CLUB";
+const namePrefix = "TheBoredApeCannabisClub";  // Spaces Removed
 const description = "The Bored Ape Cannabis Club NFT Collection, Flying High with Bored Apes";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -82,7 +83,8 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only 'rinkeby' for testing or 'polygon' for production
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
+// const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
+const CONTRACT_NAME = 'TheBoredApeCannabisClub';  // Spaces Removed
 const CONTRACT_SYMBOL = 'BACC';
 const CONTRACT_TYPE = 'erc721';
 const METADATA_UPDATABLE = true; // set to true for testing
