@@ -110,12 +110,12 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 //
 
 const PUBLIC_MINT_START_DATE = "2022-04-18T13:00:45+00:00";  // This is required. Eg: 2022-02-08T11:30:48+00:00 
-//                              2022-04-20T11:20:00-05:00 would be my current local time (UTC -5)
-//                              April 20 2022 at 11:20 am local time Mexico
+//                                 2022-04-20T11:20:00-06:00 would be my current local time (UTC -5)
+//                                 April 20 2022 at 11:20 am local time Mexico
  
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER (Not doing a pre-sale).
 const PRESALE_MINT_START_DATE = "2022-04-18T13:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
-//                               2022-04-20T11:20:00-05:00 would be my current local time (UTC -5)
+//                               2022-04-20T11:20:00-06:00 would be my current local time (UTC -5)
 //                               April 20 2022 at 11:20 am local time Mexico
 
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
