@@ -25,7 +25,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 // const namePrefix = "THE BORED APE CANNABIS CLUB";
-const namePrefix = "TheBoredApeCannabisClub";  // Spaces Removed
+const namePrefix = "The Bored Ape Cannabis Club";  // Spaces Removed/Added
 const description = "The Bored Ape Cannabis Club NFT Collection, Flying High with Bored Apes";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -84,7 +84,7 @@ const CHAIN = 'rinkeby'; // only 'rinkeby' for testing or 'polygon' for producti
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 // const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
-const CONTRACT_NAME = 'TheBoredApeCannabisClub';  // Spaces Removed
+const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  // Spaces Removed/Added
 const CONTRACT_SYMBOL = 'BACC';
 const CONTRACT_TYPE = 'erc721';
 const METADATA_UPDATABLE = true; // set to true for testing
