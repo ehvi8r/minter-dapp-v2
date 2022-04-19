@@ -25,7 +25,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 // const namePrefix = "THE BORED APE CANNABIS CLUB";
-const namePrefix = "The Bored Ape Cannabis Club";  // Spaces Removed/Added
+const namePrefix = "Bored Ape Cannabis Club";  // Removed 'The'
 const description = "The Bored Ape Cannabis Club NFT Collection, Flying High with Bored Apes";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -36,7 +36,7 @@ const layerConfigurations = [
     // Code generated Apes from layers
     // For testing just use small numbers and 18 Genesis
     // For Polygon/Opensea.io Mainnet set to 10000 (+20 Genesis) = 10020 for additional $$ (Max for NFTPro Free Tier = 5000 + an additional 500 from Johannes (ref: email 11 Mar 22)) unlimited for paid tier.
-      growEditionSizeTo: 10,
+      growEditionSizeTo: 20,
       layersOrder: [
         { name: "Backgrounds" },
         { name: "Apes" },
@@ -84,7 +84,7 @@ const CHAIN = 'rinkeby'; // only 'rinkeby' for testing or 'polygon' for producti
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 // const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
-const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  // Spaces Removed/Added
+const CONTRACT_NAME = 'Bored Ape Cannabis Club';  // Removed 'The'
 const CONTRACT_SYMBOL = 'BACC';
 const CONTRACT_TYPE = 'erc721';
 const METADATA_UPDATABLE = true; // set to true for testing
