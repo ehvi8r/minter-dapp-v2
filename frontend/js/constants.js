@@ -1,6 +1,6 @@
 // replace with contract address from \backend\build\contract 
 // New Contract Generated 22-04-07 with ETH price at .001
-// New Contract Generated with const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  ** Spaces Added
+// New Contract Generated with const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  ** Spaces Added/Upper & Lower Case
 // See: https://rinkeby.etherscan.io/tx/0xb0849c9b1dfcf61b9997cd9b55ac02dd26fcf6781f913d25ecd9d916d94bfbca
 const contractAddress = "0x4160050Dd201762eB65710dC724820E757236c32"; 
 //Replace with your own contract address from build/contract/_contract.json after generating contract                    
