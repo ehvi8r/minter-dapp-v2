@@ -4,7 +4,7 @@
 const contractAddress = "0x4A5Afd2f8dC4B2c0f4DD937dd0972359f109Fe4e"; 
 //Replace with your own contract address from build/contract/_contract.json after generating contract                    
 
-const chain = "rinkeby"; // rinkeby or polygon
+const chain = "polygon"; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";

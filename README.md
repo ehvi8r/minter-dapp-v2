@@ -146,11 +146,11 @@ $ npm run refresh_os --start=1 --end=100
 //    4. Change in config.js mint price to 100 (MATIC) and freeze metadata METADATA-UPDATEABLE=false *
 //    5. Change ETH price in index.html and home.html (.05 ETH =~100 MATIC)                          *
 //    6. Change GrowEditionSize numbers for production                                               *
-//    7. Change public mint start date to XX Month (and other dates as required)                     *
-//    8. Add contract address from \backend\contract to frontend\js\constants.js                     *
-//    9. Change frontend\js\constants chain to 'polygon'                                             *
-//    10. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan (see code) *
-//    11. Change app.js PRE-SALE MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan          *
-//    12. See changes in BACCapp.js code for 11. and 12.                                             *
+//    7. Change public mint start date to XX April (and other dates as required)                     *
+//    8. Change frontend\js\constants chain to 'polygon'                                             *
+//    9. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan             *
+//    10. Change app.js PRE-SALE MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan          *
+//    11. See changes in BACCapp.js code for 11. and 12.                                             *
+//    12. Add contract address from \backend\contract to frontend\js\constants.js                    *
 //    13. Remove testnets. in opensea links in index.html and home.html                              *
 // ***************************************************************************************************

@@ -7,11 +7,11 @@
 //    5. Change ETH price in index.html and home.html (.05 ETH =~100 MATIC)                          *
 //    6. Change GrowEditionSize numbers for production                                               *
 //    7. Change public mint start date to XX April (and other dates as required)                     *
-//    8. Add contract address from \backend\contract to frontend\js\constants.js                     *
-//    9. Change frontend\js\constants chain to 'polygon'                                             *
-//    10. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan            *
-//    11. Change app.js PRE-SALE MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan          *
-//    12. See changes in BACCapp.js code for 11. and 12.                                             *
+//    8. Change frontend\js\constants chain to 'polygon'                                             *
+//    9. Change app.js PUBLIC MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan             *
+//    10. Change app.js PRE-SALE MINT 'rinkeby' to 'polygon' and rinkebyscan to polygonscan          *
+//    11. See changes in BACCapp.js code for 11. and 12.                                             *
+//    12. Add contract address from \backend\contract to frontend\js\constants.js                    *
 //    13. Remove testnets. in opensea links in index.html and home.html                              *
 // ***************************************************************************************************
 
@@ -36,7 +36,7 @@ const layerConfigurations = [
     // Code generated Apes from layers
     // For testing just use small numbers and 18 Genesis
     // For Polygon/Opensea.io Mainnet set to 10000 (+20 Genesis) = 10020 for additional $$ (Max for NFTPro Free Tier = 5000 + an additional 500 from Johannes (ref: email 11 Mar 22)) unlimited for paid tier.
-      growEditionSizeTo: 15,
+      growEditionSizeTo: 10000,
       layersOrder: [
         { name: "Backgrounds" },
         { name: "Apes" },
@@ -80,17 +80,17 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only 'rinkeby' for testing or 'polygon' for production
+const CHAIN = 'polygon'; // only 'rinkeby' for testing or 'polygon' for production
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 // const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
 const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  // Production Name/Upper & Lower Case
 const CONTRACT_SYMBOL = 'BACC';
 const CONTRACT_TYPE = 'erc721';
-const METADATA_UPDATABLE = true; // set to true for testing
+const METADATA_UPDATABLE = false; // set to true for testing, false for mainnet
 // const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting, true if you're doing a reveal
-const OWNER_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // Contract Owner and Treasury Owner (keep the sqme)
-const TREASURY_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
+const OWNER_ADDRESS = '0xf44B0e3C4D701675743274420EC8dbCE1F43dBc7';  // Contract Owner and Treasury Owner (keep the sqme)
+const TREASURY_ADDRESS = '0xf44B0e3C4D701675743274420EC8dbCE1F43dBc7';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
 const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. ** CANNOT BE UPDATED! **
 // **************************************************************************************************************
 // ****** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created ******
@@ -99,7 +99,7 @@ const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. ** C
 // ****** FOR TESTING SET PRICE TO .001                                                                    ******
 // ****** FOR PRODUCTION SET PRICE TO 100                                                                  ******
 // **************************************************************************************************************
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH (set to .001 for testing), Polygon = MATIC.  ** 
+const MINT_PRICE = 100.00; // Minting price per NFT. Rinkeby = ETH (set to .001 for testing), Polygon = MATIC.  ** 
 // **************************************************************************************************************
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
@@ -111,17 +111,17 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 //         Public Sale: 20 Apr 2022 at 4:20 PM UTC
 //
 
-const PUBLIC_MINT_START_DATE = "2022-04-18T13:00:45+00:00";  // This is required. Eg: 2022-02-08T11:30:48+00:00 
+const PUBLIC_MINT_START_DATE = "2022-04-19T13:00:45+00:00";  // This is required. Eg: 2022-02-08T11:30:48+00:00 
 //                              2022-04-20T11:20:00-05:00 would be my current local time (UTC -5)
 //                              April 20 2022 at 11:20 am local time Mexico
  
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER (Not doing a pre-sale).
-const PRESALE_MINT_START_DATE = "2022-04-18T13:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-19T13:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 //                               2022-04-20T11:20:00-05:00 would be my current local time (UTC -5)
 //                               April 20 2022 at 11:20 am local time Mexico
 
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x91932159EeB1F5653c9c60C62B530A4d421e09F8"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0xf44B0e3C4D701675743274420EC8dbCE1F43dBc7"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
@@ -160,7 +160,7 @@ const solanaMetadata = {
   external_url: "https://www.theboredapecannabisclub.com/",
   creators: [
     {
-      address: "0x91932159EeB1F5653c9c60C62B530A4d421e09F8",
+      address: "0xf44B0e3C4D701675743274420EC8dbCE1F43dBc7",
       share: 100,
     },
   ],
