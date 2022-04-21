@@ -79,7 +79,7 @@ const extraMetadata = {
 
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
-const LIMIT = 10; // Your API key rate limit 2 for free tier 10 for growth tier
+const LIMIT = 4; // Your API key rate limit 2 for free tier 4 for growth tier
 const CHAIN = 'polygon'; // only 'rinkeby' for testing or 'polygon' for production
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
