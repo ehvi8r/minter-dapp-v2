@@ -307,7 +307,7 @@ section {
 .info-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;                              
+  width: 70%;                         /* change 100% to 70% */                         
   text-align: center;
   margin-bottom: 2rem;
 }
