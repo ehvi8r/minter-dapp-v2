@@ -57,7 +57,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 640px;                  /* Change to 2/3 of 960 = 640 */
+  max-width: 960px;                  /* Change to 2/3 of 960 = 640 -NO*/
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
@@ -75,7 +75,7 @@ header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-    max-width: 640px;                  /* Change to 2/3 of 960 = 640 */
+    max-width: 960px;                  /* Change to 2/3 of 960 = 640 -NO*/
 }
 
 .menu {
@@ -108,7 +108,7 @@ header .container {
 /* NOT CONNECTED */
 .not-connected {
   align-items: center;
-  height: 80%;                             /* Change height from 100% to 80% */
+  height: 100%;                             /* Change height from 100% to 80% -NO*/
   text-align: center;
   margin: 0 auto 0 35vw;
   opacity: 0;
@@ -215,7 +215,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(80vw);             /* May need to change this to 80vw */
+  transform: translateX(80vw);             /* May need to change this from 100vw to 80vw */
   transition: all 0.5s ease-in-out;
 }
 
@@ -299,7 +299,7 @@ section {
 /* MINT CONTAINER */
 
 .mint-container {
-  width: 80%;                         /* test change 100% to 80% - only changes content inside the container */
+  width: 100%;                         /* test change 100% to 80% - only changes content inside the container -NO*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,7 +308,7 @@ section {
 .info-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;                         /* test change 100% to 80% - only changes content inside the container */                         
+  width: 100%;                         /* test change 100% to 80% - only changes content inside the container -NO*/                         
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -334,7 +334,7 @@ section {
 }
 
 .input-number {
-  height: 80%;                        /* Change from 100% to 80% */
+  height: 100%;                        /* Change from 100% to 80% -NO*/
   padding: 1rem;
   vertical-align: top;
   text-align: center;
@@ -350,7 +350,7 @@ section {
 .total-price-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;                         /* test change 100% to 80% - only changes content inside the container */
+  width: 100%;                         /* test change 100% to 80% - only changes content inside the container -NO*/
   padding: 1rem 0 2rem;              
 }
 
@@ -365,7 +365,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;                         /* test change 100% to 80% - only changes content inside the container */
+  width: 100%;                         /* test change 100% to 80% - only changes content inside the container -NO*/
 }
 
 .minted-container h1 {
