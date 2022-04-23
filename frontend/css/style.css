@@ -215,7 +215,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(80vw);             /* May need to change this from 100vw to 80vw */
+  transform: translateX(70vw);             /* May need to change this from 100vw to 70vw */
   transition: all 0.5s ease-in-out;
 }
 
