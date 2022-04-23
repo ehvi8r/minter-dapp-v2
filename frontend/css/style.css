@@ -75,6 +75,7 @@ header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+    max-width: 640px;                  /* Change to 2/3 of 960 = 640 */
 }
 
 .menu {
@@ -214,7 +215,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(100vw);             /* May need to change this to 80vw */
+  transform: translateX(80vw);             /* May need to change this to 80vw */
   transition: all 0.5s ease-in-out;
 }
 
