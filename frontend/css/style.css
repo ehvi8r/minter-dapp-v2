@@ -146,8 +146,8 @@ header .container {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--btn-bg-color);
-  color: var(--font-color);                /* changed --accent-color to --font-color */
+  background: var(--bg-color);             /* changed --btn-bg-color to --bg-color    */
+  color: var(--font-color);                /* changed --accent-color to --font-color  */
   font-family: var(--font-code);           /* changed --font-secondary to --font-code */
   font-style: italic;                         
   /* font-weight: bold;                       removed bold */                   
