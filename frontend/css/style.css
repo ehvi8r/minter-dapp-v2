@@ -146,21 +146,22 @@ header .container {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--bg-color);             /* changed --btn-bg-color to --bg-color    */
-  color: var(--font-color);                /* changed --accent-color to --font-color  */
-  font-family: var(--font-code);           /* changed --font-secondary to --font-code */
+  background: var(--btn-bg-color);             /* changed --btn-bg-color to --bg-color    */
+  color: var(--accent-color);                  /* changed --accent-color to --font-color  */
+  font-family: var(--font-scondary);           /* changed --font-secondary to --font-code */
   font-style: italic;                         
   /* font-weight: bold;                       removed bold */                   
   font-size: 1rem;
   text-align: center;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: var(--bg-color-transparent); /* change --header-shadow to --bg-color-transparent */
+  box-shadow: var(--header-shadow);           /* change --header-shadow to --bg-color-transparent */
   cursor: pointer;
   position: relative;
   text-decoration: none;
   outline: none;
-  border-color: transparent;                /* added */
+  /* border-color: transparent;                added */
+  transform: translateY(4px);                 /* added to give a hover effect */
 }
 .btn:hover {
   box-shadow: none;
