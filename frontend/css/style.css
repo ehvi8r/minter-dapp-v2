@@ -155,7 +155,7 @@ header .container {
   text-align: center;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: var(--header-shadow);
+  box-shadow: var(--bg-color-transparent); /* change --header-shadow to --bg-color-transparent */
   cursor: pointer;
   position: relative;
   text-decoration: none;
