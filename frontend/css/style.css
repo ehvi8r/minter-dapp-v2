@@ -150,7 +150,7 @@ header .container {
   color: var(--accent-color);                  /* changed --accent-color to --font-color  */
   font-family: var(--font-scondary);           /* changed --font-secondary to --font-code */
   font-style: italic;                         
-  /* font-weight: bold;                       removed bold */                   
+  font-weight: bold;                           /* removed bold */                   
   font-size: 1rem;
   text-align: center;
   text-transform: capitalize;
