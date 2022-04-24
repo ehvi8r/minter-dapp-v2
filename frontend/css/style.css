@@ -108,7 +108,7 @@ header .container {
 /* NOT CONNECTED */
 .not-connected {
   align-items: center;
-  height: 100%;                             /* Change height from 100% to 80% -NO*/
+  height: 100%;                      /* Change height from 100% to 80% -NO*/
   text-align: center;
   margin: 0 auto 0 35vw;
   opacity: 0;
@@ -147,10 +147,10 @@ header .container {
   display: inline-block;
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
-  color: var(--accent-color);
-  font-family: var(--font-secondary);
-  font-style: italic;
-  font-weight: bold;
+  color: var(--font-color);                /* changed --accent-color to --font-color */
+  font-family: var(--font-code);           /* changed --font-secondary to --font-code */
+  font-style: italic;                         
+  /* font-weight: bold;                       removed bold */                   
   font-size: 1rem;
   text-align: center;
   text-transform: capitalize;
@@ -160,6 +160,7 @@ header .container {
   position: relative;
   text-decoration: none;
   outline: none;
+  border-color: transparent;                /* added */
 }
 .btn:hover {
   box-shadow: none;
@@ -172,6 +173,7 @@ header .container {
   border-radius: 5rem;
   margin-left: 2rem;
   border-color: transparent;
+  transform: translateY(4px);   /* added to give a hover effect */
 }
 
 .hero-btn {
