@@ -220,9 +220,13 @@ header .container {
   text-decoration: none;
   outline: none;
   border-color: transparent;
-  transform: translateY(4px);   /* added to give a hover effect */
+  transform: translateY(4px);    /* added to give a hover effect */
 }
-
+.mmbtn:hover {
+  box-shadow: none;
+  color:#B0AFB1;
+ }
+ 
 .enter-btn {
   border-radius: 4px;
   font-size: 1.2rem;
