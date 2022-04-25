@@ -209,16 +209,18 @@ header .container {
   color: var(--font-color);
   font-family: var(--font-secondary);
   font-style: italic;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1rem;
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: all 0.3s ease;
   box-shadow: var(--header-shadow);
   cursor: pointer;
   position: relative;
   text-decoration: none;
   outline: none;
+  border-color: transparent;
+  transform: translateY(4px);   /* added to give a hover effect */
 }
 
 .enter-btn {
