@@ -188,7 +188,7 @@ header .container {
   padding: 1rem 2rem;
   background: var(--rust);
   color: var(--font-color);
-  font-family: var(--font-code);
+  font-family: var(--font-secondary);
   font-style: italic;
   font-weight: bold;
   font-size: 1rem;
@@ -207,14 +207,14 @@ header .container {
   padding: 1rem 2rem;
   background: var(--bg-color);
   color: var(--font-color);
-  font-family: var(--font-secondary);
+  font-family: var(--font-code);
   font-style: italic;
   /* font-weight: bold; */
   font-size: 1rem;
   text-align: center;
   /* text-transform: capitalize; */
   transition: all 0.3s ease;
-  box-shadow: var(--header-shadow);
+  box-shadow: var(--eggplant);    /* changed from --header-shadow to -- eggplant */ 
   cursor: pointer;
   position: relative;
   text-decoration: none;
