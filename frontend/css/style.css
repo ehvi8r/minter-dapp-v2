@@ -201,6 +201,26 @@ header .container {
   text-decoration: none;
   outline: none;
 }
+
+.mmbtn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  box-shadow: var(--header-shadow);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+}
+
 .enter-btn {
   border-radius: 4px;
   font-size: 1.2rem;
