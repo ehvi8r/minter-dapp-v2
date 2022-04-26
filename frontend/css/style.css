@@ -417,7 +417,7 @@ section {
 
 .splide {
   position: absolute;
-  top: 120px;            /* changed from 90 to 100px (1/3 of image size) */
+  top: 100px;            /* changed from 90 to 100px (1/3 of image size) */
   left: 5rem;
   z-index: -1;
 /*  max-height: 100vh;   removed comment out */
@@ -444,7 +444,8 @@ section {
 
 .splide__slide_small img {
  width: 100%;                                  /* for small image slider */   
- border-width: 5px 10px;                       /* added border */
+ border-width: 5px 10px;                       
+ border: var(--bg-color-transparent) solid;    /* added border */
 }
 
 /* From CB (not working)
