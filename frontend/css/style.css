@@ -435,14 +435,12 @@ header .container {
 	max-height: 100vh;
 }
 */
-	
-/* If the above doesn't work, thry this... */
 	width: 100vw;
 	height: auto;
 	max-width: 80% !important;                
 }
 
-/* From CB (not working)                       removed comment out */
+/* From CB (not working)                       removed comment out 
 .splide .splide__track {
   max-height: 100vh;
 }
@@ -456,18 +454,18 @@ header .container {
 }
 
 .splide__slide_small img {
- width: 100%;                                  /* for small image slider */   
+ width: 100%;                                     
  border-width: 5px 10px;                       
  border: var(--bg-color-transparent) solid;
 }
 
 .splide-2 .splide__slide img {
   width: 20vw;
-  border: var(--bg-color-transparent) solid;   /* added border and border-width */
+  border: var(--bg-color-transparent) solid;   
   border-width: 2px 5px;
 }
 
-/* End comment out From CB */
+End comment out From CB */
 
 /* SPINNER */
 .dot-spin {
