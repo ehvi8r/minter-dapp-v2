@@ -439,7 +439,7 @@ section {
 /* If the above doesn't work, thry this... */
 	width: 100vw;
 	height: auto;
-	max-width: 80% !important;                
+	max-width: 70% !important;                
 }
 
 .splide__slide_small img {
