@@ -432,7 +432,7 @@ section {
 /*  width: 100%;              Commented out and added additional code to fit splide images */
 	width: auto;
 	height: 100%;
-	max-height: 80vh;
+	max-height: 70vh;
 	
 /* If the above doesn't work, thry this... 
 	width: 100vw;
