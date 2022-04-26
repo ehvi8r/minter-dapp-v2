@@ -69,13 +69,14 @@ body {
 header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
+  display: flex;                      /* Added */
 }
 
 header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-    max-width: 960px;                  /* Change to 2/3 of 960 = 640 -NO*/
+  max-width: 960px;                  /* Change to 2/3 of 960 = 640 -NO*/
 }
 
 .menu {
@@ -844,6 +845,7 @@ footer {
   text-align: center;
 /* padding: 1rem 2rem;  */
   background: var(--bg-color);
+  display: flex;                      /* Added */
 }
 
 /* UTILITIES */
