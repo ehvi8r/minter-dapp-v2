@@ -257,7 +257,7 @@ header .container {
 
 /* COUNTDOWN SECTION */
 
-section {
+.section {
   flex: 1 1 auto;
 }
 
@@ -439,21 +439,15 @@ section {
 /* If the above doesn't work, thry this... */
 	width: 100vw;
 	height: auto;
-	max-width: 70% !important;                
+	max-width: 80% !important;                
 }
 
-.splide__slide_small img {
- width: 100%;                                  /* for small image slider */   
- border-width: 5px 10px;                       
- border: var(--bg-color-transparent) solid;    /* added border */
-}
-
-/* From CB (not working)
+/* From CB (not working)                       removed comment out */
 .splide .splide__track {
   max-height: 100vh;
 }
 .splide .splide__slide {
-  border: var(--accent-color) solid;
+  border: var(--bg-color-transparent) solid;
   border-width: 5px 10px;
 }
 
@@ -461,10 +455,19 @@ section {
   width: 100%;
 }
 
+.splide__slide_small img {
+ width: 100%;                                  /* for small image slider */   
+ border-width: 5px 10px;                       
+ border: var(--bg-color-transparent) solid;
+}
+
 .splide-2 .splide__slide img {
   width: 20vw;
+  border: var(--bg-color-transparent) solid;   /* added border and border-width */
+  border-width: 2px 5px;
 }
-End From CB */
+
+/* End comment out From CB */
 
 /* SPINNER */
 .dot-spin {
