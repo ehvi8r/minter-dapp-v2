@@ -420,7 +420,7 @@ section {
   top: 90px;
   left: 5rem;
   z-index: -1;
-/*  max-height: 100vh; */
+  max-height: 100vh;  /* removed comment out */
 }
 
 .splide__slide {
@@ -429,7 +429,15 @@ section {
 }
 
 .splide__slide img {
-  width: 100%;
+/*  width: 100%;              Commented out and added additional code to fit splide images */
+	width: auto;
+	height: 100%;
+	max-height: 80vh;
+	
+/* If the above doesn't work, thry this... 
+	width: 100vw;
+	height: auto;
+	max-width: 80% !important;                */
 }
 
 /* From CB (not working)
@@ -671,7 +679,9 @@ End From CB */
   border-radius: 5px;
   padding: 1rem 2rem;
 }
-@media (max-width: 790px) {
+
+/* For mobile phones/small tablets */
+@media (max-width: 768px) {                 /* Changed 790 to 768 for small tablets and phones */
   .wrapper .center-line {
     left: 40px;
   }
@@ -688,13 +698,77 @@ End From CB */
     left: -60px;
   }
 }
-@media (max-width: 440px) {
+
+/* For small mobile phones */
+@media (max-width: 600px) {                 /* Changed 440 to 600 for small devices/phones */
   .wrapper .center-line,
   .row section::before,
   .row section .icon {
     display: none;
   }
   .wrapper .row {
+    margin: 10px 0;
+  }
+}
+
+/* For mobile phones/small tablets */
+@media (max-width: 768px) {                 /* Added for .header */
+  .header .center-line {
+    left: 40px;
+  }
+  .header .row {
+    margin: 30px 0 3px 60px;
+  }
+  .header .row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+/* For small mobile phones */
+@media (max-width: 600px) {                 /* Added for .header */
+  .header .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+  .header .row {
+    margin: 10px 0;
+  }
+}
+
+/* For mobile phones/small tablets */
+@media (max-width: 768px) {                 /* Added for .footer */
+  .footer .center-line {
+    left: 40px;
+  }
+  .footer .row {
+    margin: 30px 0 3px 60px;
+  }
+  .footer .row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+/* For small mobile phones */
+@media (max-width: 600px) {                 /* Added for .footer */
+  .footer .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+  .footer .row {
     margin: 10px 0;
   }
 }
