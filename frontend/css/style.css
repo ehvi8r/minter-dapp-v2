@@ -70,6 +70,7 @@ header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
   display: flex;                      /* Added */
+  max-width: 960px;                   /* Added */
 }
 
 header .container {
@@ -846,6 +847,7 @@ footer {
 /* padding: 1rem 2rem;  */
   background: var(--bg-color);
   display: flex;                      /* Added */
+  max-width: 960px;                   /* Added */
 }
 
 /* UTILITIES */
