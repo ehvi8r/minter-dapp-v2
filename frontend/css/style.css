@@ -61,7 +61,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden;               removed so overflow wraps */
 }
 
 /* HEADER */
@@ -727,7 +727,7 @@ End From CB */
   font-size: 1.1rem;
   line-height: 1.8;
   font-family: var(--font-secondary);
-  overflow: hidden;
+  /* overflow: hidden;                      removed so overflow wraps */
   opacity: 1;
   transform: translate( 0 , 0 );
   margin-top: 1rem;
