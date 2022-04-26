@@ -420,7 +420,7 @@ section {
   top: 90px;
   left: 5rem;
   z-index: -1;
-  max-height: 100vh;  /* removed comment out */
+/*  max-height: 100vh;   removed comment out */
 }
 
 .splide__slide {
@@ -442,8 +442,10 @@ section {
 }
 
 .splide__slide_small img {
- width: 100%;                                  /* for small image slider */       
+ width: 100%;                                  /* for small image slider */   
+ border-width: 5px 10px;                       /* added border */
 }
+
 /* From CB (not working)
 .splide .splide__track {
   max-height: 100vh;
