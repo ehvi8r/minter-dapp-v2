@@ -429,16 +429,17 @@ section {
 }
 
 .splide__slide img {
-/*  width: 100%;              Commented out and added additional code to fit splide images */
+/*  width: 100%;              Commented out and added additional code to fit splide images 
 	width: auto;
-	height: 80%;
+	height: 100%;
 	max-height: 100vh;
 }
-
-/* If the above doesn't work, thry this... 
+*/
+	
+/* If the above doesn't work, thry this... */
 	width: 100vw;
 	height: auto;
-	max-width: 80% !important;                */
+	max-width: 80% !important;                
 }
 
 .splide__slide_small img {
