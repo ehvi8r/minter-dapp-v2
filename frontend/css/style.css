@@ -70,7 +70,7 @@ header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
   display: flex;                      /* Added */
-  max-width: 960px;                   /* Added */
+  /* max-width: 960px;                /* Added */
 }
 
 header .container {
@@ -157,13 +157,13 @@ header .container {
   text-align: center;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: var(--bg-color-transparent);           /* change --header-shadow to --bg-color-transparent */
+  box-shadow: var(--bg-color-transparent);     /* change --header-shadow to --bg-color-transparent */
   cursor: pointer;
   position: relative;
   text-decoration: none;
   outline: none;
   /* border-color: transparent;                added */
-  transform: translateY(4px);                 /* added to give a hover effect */
+  transform: translateY(4px);                  /* added to give a hover effect */
 }
 .btn:hover {
   box-shadow: none;
@@ -176,7 +176,7 @@ header .container {
   border-radius: 5rem;
   margin-left: 2rem;
   border-color: transparent;
-  transform: translateY(4px);   /* added to give a hover effect */
+  transform: translateY(4px);                 /* added to give a hover effect */
 }
 
 .hero-btn {
@@ -216,13 +216,13 @@ header .container {
   text-align: center;
   /* text-transform: capitalize; */
   transition: all 0.3s ease;
-  box-shadow: var(--eggplant);    /* changed from --header-shadow to -- eggplant */ 
+  box-shadow: var(--eggplant);              /* changed from --header-shadow to -- eggplant */ 
   cursor: pointer;
   position: relative;
   text-decoration: none;
   outline: none;
   border-color: transparent;
-  transform: translateY(4px);    /* added to give a hover effect */
+  transform: translateY(4px);               /* added to give a hover effect */
 }
 .mmbtn:hover {
   box-shadow: none;
@@ -246,7 +246,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(70vw);             /* May need to change this from 100vw to 70vw */
+  transform: translateX(100vw);             /* May need to change this from 100vw to 70vw */
   transition: all 0.5s ease-in-out;
 }
 
@@ -847,7 +847,7 @@ footer {
 /* padding: 1rem 2rem;  */
   background: var(--bg-color);
   display: flex;                      /* Added */
-  max-width: 960px;                   /* Added */
+  /*  max-width: 960px;               /* Added */
 }
 
 /* UTILITIES */
