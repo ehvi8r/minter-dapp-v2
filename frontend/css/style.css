@@ -87,7 +87,7 @@ header .container {
 
 .banner-menu {
   display: flex;                      /* added top menu bar for white text no underline */
-  font-size: 15px;                    /* 0.5rem; */
+  font-size: 0.9375rem;               /* 0.5rem; (15px = 0.9375rem */
   line-height: 1;   
   color: #B7C7D3;         
   gap: 2rem;
