@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush:ital,wght@0,200;0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 /* GLOBAL STYLES */
 
 :root {
@@ -19,8 +22,10 @@
   --card-shadow: var(--accent-color) 0px 0px 20px; */
 
   --font-primary: "Poppins", sans-serif;
+  --font-primary-2: "Montserrat", sans-serif;
   --font-secondary: "Arvo", serif;
   --font-code: "Roboto", monospace;
+  --font-written: "Water Brush", cursive;
   --bg-color: #000000;
   --bg-color-transparent: #00000080;
   --font-color: #ffffff;
@@ -43,6 +48,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.nav-menu > li > a::before {
+  content: "";
+}
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -454,6 +466,28 @@ header .container {
 }
 .splide-2 .splide__slide img {
   width: 20vw;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 12.5%; /* IE10 */
+  flex: 12.5%;
+  max-width: 12.5%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* From CB (not working) so commented out 

@@ -87,7 +87,8 @@ const CHAIN = 'polygon'; // only 'rinkeby' for testing or 'polygon' for producti
 const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  // Production Name/Upper & Lower Case
 const CONTRACT_SYMBOL = 'BACC';
 const CONTRACT_TYPE = 'erc721';
-const METADATA_UPDATABLE = false; // set to true for testing, false for mainnet
+const METADATA_UPDATABLE = false; // set to true for testing, false for mainnet 
+// ** Be careful with this, if false, it freezes the contract, so you cannot update anything (like pre-sale-date, mint-date etc... (anything updateable))
 // const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting, true if you're doing a reveal
 const OWNER_ADDRESS = '0xf44B0e3C4D701675743274420EC8dbCE1F43dBc7';  // Contract Owner and Treasury Owner (keep the sqme)
 const TREASURY_ADDRESS = '0xf44B0e3C4D701675743274420EC8dbCE1F43dBc7';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
