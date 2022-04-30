@@ -39,9 +39,11 @@
     --blue: #7A97AB;
     --light-blue: #B7C7D3;
     --sage: #7A9B90;
+    --bright-green: #AADD33;
 	  --eggplant: #84657A;
 	  --tan: #BC955C;
  	  --rust: #DE6B30;
+    --yellow: #BFC500;
 }
 
 * {
@@ -449,7 +451,7 @@ header .container {
                                                                                             */
 	width: 100vw;
 	height: auto;
-	max-width: 80% !important;                
+	max-width: 100% !important;         /* changed from 80% to 100% */       
 }
 .splide__slide_small img {
  width: 100%;                                     
@@ -829,6 +831,19 @@ End comment out From CB */
   }
   .footer .row {
     margin: 10px 0;
+  }
+}
+
+/* Bootstrap Test */
+.navbar-toggle {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 786px) {
+  .navbar-brand {
+    padding-right: 60px;
+    height: auto;
   }
 }
 
