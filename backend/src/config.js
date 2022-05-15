@@ -129,9 +129,9 @@ const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually
 //                              April XX 2022 at 10:00 am local time Launch date whitelisting available right away
 
 // ** OPTIONAL **
-// let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary
-// Contract Address from \backend\build\contract
-let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // This is the RINKEBY contract for testing, remove for production
+// let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary (uless you want to make changes later)
+// Contract Address from \backend\build\contract\_contract.json
+let CONTRACT_ADDRESS = "0xAa756Ade2F85939faA67Af97E8365FCAeD931faA"; // This is the RINKEBY contract for testing, set proper CA for production (this is required if you're going to make changes/updates to the contract later)
 
 // Removed Generic as I will not be doing a reveal, and if left in it causes an error when uploading Metadata (looking for Generic Metadata in _ipfsMetasGeneric and the file is not there).
 // Generic Metadata is optional if you want to reveal your NFTs, I will NOT be doing a reveal
