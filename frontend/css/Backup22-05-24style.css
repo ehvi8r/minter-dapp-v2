@@ -91,14 +91,13 @@ header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 960px;                  /* Change to 2/3 of 960 = 640 -NO */
+  max-width: 960px;                  /* Change to 2/3 of 960 = 640 -NO*/
 }
 
 .menu {
   display: flex;
   gap: 2rem;
   align-items: center;
- /* flex-wrap:wrap;                      Added to test menu wrapping 22-05-21 */
 }
 
 .banner-menu {

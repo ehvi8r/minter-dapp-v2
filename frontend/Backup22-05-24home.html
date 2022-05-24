@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Track Changes
-***********************************************************************************************************
-*  Last Change: 22-05-23 to create Responsive Menu and get rid of MOBILE link on home page                *
-*               Header and Footer menu code in index.html and home.html and style.css has changed         *
-*               [Rindex.html has changed (based on working index.html 2022-05-23)                         *
-*               Rstyle.css has changed (based on working style.css 2022-05-23)                            *
-*               Need to change index.html, home.html, and style.css and redeploy]                         *
-*                                                                                                         *
-*  Changed: 22-04-26 to correct image sizes in splider.                                                   *
-*               22-04-26 removed NFT Calendar link because they would not remove the "Please be Careeful" *
-*                 that was causing concern from potential buyers (added back, needed exposure, with       *
-*                 disclaimer).                                                                            *
-*               22-04-30 created mobile responsive app and added 'MOBILE' link in menu.                   *
-***********************************************************************************************************
-End Track Changes -->
-<head>
+  <head>
     <title>The Bored Ape Cannabis Club</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,76 +15,97 @@ End Track Changes -->
 
     <!-- AOS animation code  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- AOS script added to check if AOS Error resolves  -->                                         
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <link rel="manifest" href="images/x-icon/site.webmanifest" />
     <link rel="stylesheet" href="css/three-dots.min.css" />
     <link rel="stylesheet" href="css/splide.min.css" />
-    <!-- *** Stlyesheet updated for RESPONSIVE menu Testing, remove 'R' for Production Code ***  -->
-    <link rel="stylesheet" href="css/Rstyle.css" />  
-</head>
-<body>
-<!-- Responsive Menu -->
-  <!-- Header Section -->
-  <header class="header-section">
-    <section class="menu-container">
-          <!-- Navigation Menu -->
-          <div class="menu">
-            <a href="/">
-               <img src="images/banners-and-logos/ape.png" alt="spacer" width="42" height="1" /> 
-               <img src="images/x-icon/A.png" alt="favicon" height="32" width="32" />
-               <img src="images/banners-and-logos/ape.png" alt="spacer" width="4" height="1" /> 
-            </a>
-            <a href="index.html#" target="_self" alt="home" class="banner-menu">home </a>
-            <a href="#About" alt="about" class="banner-menu">about </a>
-            <a href="#Team" alt="team" class="banner-menu">team </a>
-            <a href="#Collection" alt="collection" class="banner-menu">collection </a> 
-            <a href="#Roadmap" alt="roadmap" class="banner-menu">roadmap </a> 
-            <a href="#FAQ" class="banner-menu">faq </a>
-               <img src="images/banners-and-logos/ape.png" alt="spacer" width="7" height="1" />
-            <!-- End Navigation Menu -->
-            <!-- Socials Menu -->
-            <a href="https://discord.gg/wzWNrke95w" target="_blank" rel="noopener noreferrer" >
-               <img src="images/header/discord.png" alt="Discord" />
-            </a>
-            <a href="https://twitter.com/BoredApe_420" target="_blank" rel="noopener noreferrer" >
-               <img src="images/header/twitter.png" alt="Twitter" />
-            </a>
-            <a href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true" target="_blank" rel="noopener noreferrer" >
-               <img src="images/header/reddit.png" alt="Reddit" />
-            </a>
-            <a href="https://t.me/BoredApeCannabisClub" target="_blank" rel="noopener noreferrer" >
-               <img src="images/header/telegram.png" alt="Telegram" />
-            </a>
-            <a href="https://opensea.io/collection/theboredapecannabisclub" target="_blank" rel="noopener noreferrer" >
-              <img src="images/header/opensea.png" alt="Opensea" />
-            </a>
-            <!-- End Socials Menu -->	
-            <!-- Connect Wallet Button in Menu -->
-            <button id="connectWallet" class="wallet-btn mmbtn">
-              <span>Connect Wallet</span>
-            </button>
-            <!-- End Connect Wallet Button in Menu -->
-          </div>  
-    </section>
-</header>
-<!-- End Header Section -->
-<!-- End No List Responsive Menu -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<!-- Main Wrapper  -->
-    <div class="main-wrapper">
-      <section class="container not-connected">
-        <div>
-          <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
-          <h1 id="welcomeH1">Welcome to the Bored Ape Cannabis Club NFT Project</h1>
-          <p id="welcomeP">Flying High with Bored Apes!</p>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="images/x-icon/A.png" alt="favicon" height="32" width="32" />
+          </a>
         </div>
+
+        <div class="menu">  
+          <section class="container"> 
+              <a href="index.html#" target="_self" alt="home" class="banner-menu">home </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  			
+              <a href="#About" alt="about" class="banner-menu">about </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#Team" alt="team" class="banner-menu">team </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#Collection" alt="collection" class="banner-menu">collection </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#Roadmap" alt="roadmap" class="banner-menu">roadmap </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#FAQ" class="banner-menu">faq </a>
+            </section>
+        </div>
+        
+        <div class="menu">
+          <a
+            href="https://discord.gg/wzWNrke95w"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/discord.png" alt="Discord" />
+          </a>
+          <a
+            href="https://twitter.com/BoredApe_420"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/twitter.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/reddit.png" alt="Reddit" />
+          </a>
+          <a
+            href="https://t.me/BoredApeCannabisClub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/telegram.png" alt="Telegram" />
+          </a>
+          <a
+            href="https://opensea.io/collection/theboredapecannabisclub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/opensea.png" alt="Opensea" />
+          </a>	
+          <button class="wallet-btn mmbtn" id="connectWallet">
+            <span>Connect Wallet</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+<!-- Bored Ape Cannabis Club Heading Logo and Banner here?  -->
+<!-- Begin Main Wrapper  -->
+<div class="main-wrapper">
+    <section class="container not-connected">
+      <div>
+        <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
+        <h1 id="welcomeH1">Welcome to the Bored Ape Cannabis Club NFT Project</h1>
+        <p id="welcomeP">Flying High with Bored Apes!</p>
+      </div>
+      <!-- <button id="connectWalletActionBtn" class="hero-btn btn"> (corrected id below) -->
         <button id="connectWallet" class="hero-btn btn">
-          <span>Connect to MetaMask</span>
-        </button>
-      </section>
-      <section class="container">
+        <span>Connect to MetaMask</span>
+      </button>
+    </section>
+
+    <section class="container">
       <div class="countdown card">
         <div id="countdown">
           <ul class="count-down" data-date="">
@@ -107,14 +113,17 @@ End Track Changes -->
               <span class="count-number days">20</span>
               <p class="count-text">Days</p>
             </li>
+
             <li class="clock-item">
               <span class="count-number hours">20</span>
               <p class="count-text">Hour</p>
             </li>
+
             <li class="clock-item">
               <span class="count-number minutes">20</span>
               <p class="count-text">Min</p>
             </li>
+
             <li class="clock-item">
               <span class="count-number seconds">20</span>
               <p class="count-text">Sec</p>
@@ -191,11 +200,13 @@ End Track Changes -->
         </a>
       </div>
     </section>
+
     <!-- Vertical Slider Section -->
     <div id="spinner" class="dot-spin"></div>
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
           <li class="splide__slide">
             <img src="images/slider/0.png" alt="0" />
           </li>
@@ -223,17 +234,20 @@ End Track Changes -->
           <li class="splide__slide">
             <img src="images/slider/8.png" alt="8" />
           </li>
-          </ul>
-        </div>
+        </ul>
       </div>
-    </div> 
+    </div>
     <!-- End Vertical Slider Section -->
+
+</div> 
 <!-- End Main Wrapper -->
 
 <!-- About Section   -->
-  <section class="bacc-content">
+<section class="bacc-content">
   <div class="container">
-    <hr size="1" noshade color="#7A97AB">
+    <!-- <p align="left"><br> -->
+      <hr size="1" noshade color="#7A97AB">
+    <!-- </p>	-->
     <a id="About">
       <h2>About Bored Ape Cannabis Club</h2>
     </a>
@@ -253,7 +267,7 @@ End Track Changes -->
           </p> 
        </p>
        <br>
-       <p align="left">Now for the fun... Bored Apes Cannabis Club is a collection of 10,000 script generated Apes and 20 
+       <p align="left">Bored Apes Cannabis Club is a collection of 10,000 script generated Apes and 20 
         Hand-created 'Genesis' Apes that are each unique in a special way for a total of 10,020 Apes, 
         inspiried by the BAYC Collection on the Etherium bolckchain. The Bored Ape Cannabis Collection 
         Apes are stored as ERC-721 Tokens on the Polygon blockchain and hosted on IPFS.  The inital collection
@@ -292,11 +306,11 @@ End Track Changes -->
           </p>
           <p align="center">Our Canadian Brother, JB, this one's for you man!</p>
        </div>
-  </section> 
+</section> 
 <!-- End About Section -->
 	  
 <!-- Team Section -->
-  <section class="bacc-content">
+<section class="bacc-content">
   <div class="container">
     <!-- <p align="left"><br> -->
       <hr size="1" noshade color="#7A97AB">
@@ -304,6 +318,7 @@ End Track Changes -->
     <a id="Team">
       <h2>The Team</h2>
     </a>
+
     <p align="left">These were developed by a small team, with a little help from some of our friends,
       Janno, Peanut and Jesse thank you for all your help 
       making this project happen, you guys are awesome! </p>
@@ -338,25 +353,26 @@ End Track Changes -->
                 <p>#422 Chief Creative</p>
               </div>
             </div>	
-              <!-- Remove this one, not needed 
+              <!-- Remove this one 
               <div class="member aos-init" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="200">
                 <div class="member-img">
                   <img src="images/banners-and-logos/GenesisP.png" alt="GenesisP" width="200" height="200" />
                 </div>
                 <div class="member-info">
                 <h2>#423</h2>
-                <p>#423 Chief Pain in the Apes Butt</p>
+                <p>#423 Chief Pain in the Butt</p>
                 </div>
               </div>	-->			
           </div>
         </div>
       </section>	
+
   </div>
-  </section>
+</section>
 <!-- End Team Section --> 
 
 <!-- Collection Section -->
-  <section class="bacc-content">
+<section class="bacc-content">
   <div class="container">
     <!-- <p align="left"><br> -->
       <hr size="1" noshade color="#7A97AB">
@@ -377,10 +393,12 @@ End Track Changes -->
 			<br>
 		  <p align="left">Now just imagine if you had gotten in on the Bored Ape Yacht Club on launch 
         day, they were selling for $.08 ETH, where would that $200 you inveted be now... as of 
-        this writing I believe they are up (at floor price) about 140,000%!!! Crazy returns, if you 
-        bought your Apecoin on day 1... Well this is your second chance, like I said before... exciting times!!</p>	
+        this writing I believe they are up (at floor price) about 140,000%!!! Crazy  Or, if you 
+        bought your Apecoin on day 1... Well this is your second chance, like I said before... launching 
+        soon exciting times!!</p>	
      
       <!-- Vertical Slider  -->
+      <!-- <section> -->
       <div class="container">
       <div class="splide-2" align="center">
       <div class="splide__track">
@@ -412,6 +430,7 @@ End Track Changes -->
       </div>
       </div>
       </div>
+      <!-- </section> -->
       <!-- End Vertical Slider  -->
       
       <!-- Add the images here, but just static, not part of the slider -->
@@ -451,11 +470,11 @@ End Track Changes -->
         </ul>
       </div>
     </div>
-  </section>
+</section>
 <!-- End Collection Section --> 
 
 <!-- Roadmap Section -->
-  <section class="bacc-content">
+<section class="bacc-content">
   <div class="container">
       <hr size="1" noshade color="#7A97AB">
       <a id="Roadmap">
@@ -463,6 +482,14 @@ End Track Changes -->
        </a>
   </div>
   <div class="container roadmap">
+    <!-- <p align="left"><br>
+      <hr size="1" noshade color="#7A97AB">
+    </p>	-->
+    <!--
+      <a id="Roadmap">
+      <h2>Roadmap</h2>  
+    </a>
+    -->
     <div class="wrapper">
       <div class="center-line">
         <a href="https://https://www.theboredapecannabisclub.com/#" class="scroll-down"><i class="fas fa-claret-up"></i></a>
@@ -479,7 +506,7 @@ End Track Changes -->
             <br><br>Watch the countdown to launch on the sebsite!
           </p>
           <!-- <div class="bottom">
-            <a href="https://discord.gg/wzWNrke95w" target="_blank" rel="noopener noreferrer">Get Whitelisted!</a>
+            <a href="https://discord.gg/wzWNrke95w" target="_blank" rel="noopener noreferrer">Get Waitlisted!</a>
           </div> -->
         </section>
       </div>
@@ -570,11 +597,11 @@ End Track Changes -->
     </div>
     
    </div>
-  </section>
+</section>
 <!-- End Roadmap Section -->
 	  
 <!-- FAQ Section	-->
-  <section class="bacc-content">
+<section class="bacc-content">
   <div class="container faq">
     <!-- <p align="left"><br> 
       <hr size="1" noshade color="#7A97AB">
@@ -582,6 +609,7 @@ End Track Changes -->
     <a id="FAQ">
       <h2>FAQs</h2>
     </a>
+
     <ul>
       <li>
         <input id="firstFaq" type="checkbox">
@@ -670,50 +698,83 @@ End Track Changes -->
         </p>
       </li>
     </ul>
+
     </div>
-  </section>
+ </section>
 <!-- End FAQ Section -->
 
+	  
 <!-- Footer Section -->
 <!--  <footer>Copyright © Bored Ape Cannabis Club 2022</footer>  -->
 <footer>
   <div class="container">
-	  <div class="logo">
-        <hr size="1" noshade color="#7A97AB">
-	     <p align="center">
-          <br>
-          <img src="images/banners-and-logos/A.png" alt="Logo" Height="100" Length="200"/></p>
-	     <br>
-	     <p align="center">© Bored Ape Cannabis Club 2022</p>
-	     <br>
+	  
+	<div class="logo">
+    <!-- <p align="left"><br> -->
+      <hr size="1" noshade color="#7A97AB">
+    <!-- </p>	-->
+	   <p align="center">
+        <br>
+        <img src="images/banners-and-logos/A.png" alt="Logo" Height="100" Length="200"/></p>
+	   <br>
+	   <p align="center">© Bored Ape Cannabis Club 2022</p>
+	   <br>
     </div>
-	  <section class="container">
-      <div class="menu">  	
-	         <!-- Navigation Menu -->
-           <a href="home.html#About" alt="About" class="banner-menu">about </a>
-           <a href="home.html#Team" alt="Team" class="banner-menu">team </a> 
-           <a href="home.html#Collection" alt="Collection" class="banner-menu">collection </a>
-           <a href="home.html#Roadmap" alt="Roadmap" class="banner-menu">roadmap </a> 
-           <a href="home.html#FAQ" alt="FAQ" class="banner-menu">faq </a>
-              <img src="images/banners-and-logos/ape.png" alt="spacer" width="2" height="1" /> 
-           <!-- End Navigation Menu -->
-           <!-- Socials Menu -->
-           <a href="https://discord.gg/wzWNrke95w" target="_blank" rel="noopener noreferrer" >
-              <img src="images/header/discord.png" alt="Discord" />
-           </a>
-           <a href="https://twitter.com/BoredApe_420" target="_blank" rel="noopener noreferrer" >
-              <img src="images/header/twitter.png" alt="Twitter" />
-           </a>
-           <a href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true" target="_blank" rel="noopener noreferrer" >
-              <img src="images/header/reddit.png" alt="Reddit" />
-           </a>
-           <a href="https://t.me/BoredApeCannabisClub" target="_blank" rel="noopener noreferrer" >
-              <img src="images/header/telegram.png" alt="Telegram" />
-           </a>
-           <a href="https://opensea.io/collection/theboredapecannabisclub" target="_blank" rel="noopener noreferrer" >
-              <img src="images/header/opensea.png" alt="Opensea" />
-           </a>	
-           <!-- End Socials Menu -->
+ 
+	<section class="container">
+      <div class="menu">  
+         <!-- <section class="container">  -->	
+              <a href="index.html#" target="_self" alt="home" class="banner-menu">home </a>
+                   <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  	
+              <a href="#About" alt="about" class="banner-menu">about </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#Team" alt="team" class="banner-menu">team </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#Collection" alt="collection" class="banner-menu">collection </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#Roadmap" alt="roadmap" class="banner-menu">roadmap </a>
+                  <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
+              <a href="#FAQ" class="banner-menu">faq </a>
+              <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" /> 
+          <!-- </section>  -->
+      <!-- </div>  -->
+
+      <!-- <div class="menu">  -->
+          <a
+            href="https://discord.gg/wzWNrke95w"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/discord.png" alt="Discord" />
+          </a>
+          <a
+            href="https://twitter.com/BoredApe_420"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/twitter.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/reddit.png" alt="Reddit" />
+          </a>
+          <a
+            href="https://t.me/BoredApeCannabisClub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/telegram.png" alt="Telegram" />
+          </a>
+          <a
+            href="https://opensea.io/collection/theboredapecannabisclub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/opensea.png" alt="Opensea" />
+          </a>	
       </div>
 	 </section>
    <!-- RaritySniper to check collection rarity -->
@@ -731,18 +792,17 @@ End Track Changes -->
 </footer>	
 <!-- End Footer Section -->
 
-  <script src="js/metamask-onboarding.bundle.js"></script>
-  <script src="js/web3.min.js"></script>
-  <script src="js/splide.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/constants.js"></script>
-  <script src="js/countdown.js"></script>
-  <script src="js/app.js"></script>
-  <script>
-    AOS.init({
-      disable: 'phone'
-    });
-  </script>
-
+    <script src="js/metamask-onboarding.bundle.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      AOS.init({
+        disable: 'phone'
+      });
+    </script>
   </body>
 </html>
