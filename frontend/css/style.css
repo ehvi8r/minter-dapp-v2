@@ -20,7 +20,7 @@
   --font-color: #ffffff;
   --btn-bg-color: #B7D7D3;
   --accent-color: #7A97AB;
-  --header-shadow: var(--accent-color) 0px 0px 5px;
+  --header-shadow: var(--bg-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 /* Colour Guide */
   --highflight-black:  #000000;
@@ -66,6 +66,15 @@ body {
   overflow: hidden;                   /* removed so overflow wraps (didn't work) */
 }
 
+.wpcols {
+  display: 
+  flex; 
+  width: 100%;
+}
+.wpcols div { 
+  flex-grow: 1; 
+}
+
 /* HEADER */
 
 header {
@@ -80,7 +89,6 @@ header .container {
   align-items: center;
   max-width: 960px;                   /* Change to 2/3 of 960 = 640 -NO*/
 }
-
 .header-btn {
   font-family:var(--font-primary-BACC);
   border:0px solid #000;
@@ -128,7 +136,7 @@ header .container {
   color: #B7C7D3; 
   justify-content: center;
   font-size: 15px; 
-	width: 100%;
+  width: 100%;
   /* 	  display: flex;              testing */
 }
 .banner-menu {
@@ -195,7 +203,7 @@ header .container {
   padding: 1rem 2rem;
   background: var(--btn-bg-color);             /* changed --btn-bg-color to --bg-color    */
   color: var(--accent-color);                  /* changed --accent-color to --font-color  */
-  font-family: var(--font-scondary);           /* changed --font-secondary to --font-code */
+  font-family: var(--font-secondary);          /* changed --font-secondary to --font-code */
   font-style: italic;                         
   font-weight: bold;                           /* removed bold */                   
   font-size: 1rem;
@@ -233,7 +241,7 @@ header .container {
 .ebtn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--rust);
+  background: var(--rust);                    /* This is the 'Enter' button on the home page */
   color: var(--font-color);
   font-family: var(--font-secondary);
   font-style: italic;
@@ -276,7 +284,7 @@ header .container {
 
 .enter-btn {
   border-radius: 4px;
-  font-size: 1.2rem;
+  font-size: 0.9375rem;                      /* 0.9375rem = 15px */
   padding: 1.0rem 3rem;
 }
 
@@ -479,7 +487,7 @@ header .container {
 	height: 100%;
 	max-height: 100vh;
 }
-                                                                                            */
+*/
 	width: 100vw;
 	height: auto;
 	max-width: 100% !important;         /* changed from 80% to 100% */       
@@ -660,6 +668,7 @@ End comment out From CB */
   height: calc(100% - 20px);
   width: 4px;
   background: var(--blue);
+  /* color: var(--blue); */
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
