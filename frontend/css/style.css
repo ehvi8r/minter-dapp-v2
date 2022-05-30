@@ -10,8 +10,8 @@
 
 :root {
 /* BACC Font and Colour Pallet from BACC Branding Guide */
-  --font-primary: "Poppins", sans-serif;
-  --font-primary-BACC: "Montserrat", sans-serif;
+  --font-primary: "Montserrat", sans-serif;
+  --font-primary-2: "Poppins", sans-serif;
   --font-secondary: "Arvo", serif;
   --font-code: "Roboto", monospace;
   --font-written: "Water Brush", cursive;
@@ -34,6 +34,17 @@
   --yellow: #BFC500;
 }
 
+/* HTML */
+
+html * {
+  font-size: 15px /*-- !important;  */
+  line-height: 1.625 !important;
+  color: #B7C7D3 !important;
+  font-family: Montserrat, sans-serif !important;
+}
+
+/* GENERAL */
+
 * {
   padding: 0;
   margin: 0;  
@@ -53,20 +64,21 @@ body {
   flex-flow: column;
   height: 100vh;
   color: var(--font-color);
-  font-family: var(--font-primary-BACC);
+  font-family: var(--font-primary);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;                   /* Change to 2/3 of 960 = 640 -NO*/
+  max-width: 960px;                   
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
-  overflow: hidden;                   /* removed so overflow wraps (didn't work) */
+  overflow: hidden;                   
+  font-family: var(--font-primary);   /* added for testing on 2022--5-29            **/
 }
-
-.wpcols {
+/*                                    / cols removed, not needed
+.wpcols { 
   display: 
   flex; 
   width: 100%;
@@ -74,6 +86,7 @@ body {
 .wpcols div { 
   flex-grow: 1; 
 }
+*/
 
 /* HEADER */
 
@@ -90,7 +103,7 @@ header .container {
   max-width: 960px;                   /* Change to 2/3 of 960 = 640 -NO*/
 }
 .header-btn {
-  font-family:var(--font-primary-BACC);
+  font-family:var(--font-primary);
   border:0px solid #000;
   border-radius:2px;
   padding:1px 1px;
@@ -161,6 +174,7 @@ header .container {
 }
 
 /* NOT CONNECTED */
+
 .not-connected {
   align-items: center;
   height: 100%;                       /* Change height from 100% to 80% -NO*/
@@ -568,13 +582,36 @@ End comment out From CB */
 
 /* BACC CONTENT */
 
+/* From Responsive Menu CSS */
+.bacc-container{
+  padding:10px 0;
+  color: #B7C7D3; 
+  justify-content: center;
+  font-size: 15px; 
+  width: 100%;
+  /* display: flex;              for testing */
+}
+/*                               for testing change bacc-content **
 .bacc-content {
-/*  padding: 5rem 0;  */
   padding: 1rem 0;
   background: var(--bg-color); 
   text-align: left;
   color: var(--light-blue);
 }
+end for testing, see below                                       **/
+
+ .bacc-content {
+  padding: 1rem 0;
+  background: var(--bg-color); 
+  text-align: left;
+  justify-content: center;
+  color: var(--light-blue); 
+  font: var(--font-primary);                 /* this doesn't change the font in the div or section */
+  /*                                         sp where do you change the font for the site???       */
+  font-size: 15px; 
+  width: 100%;
+}  
+
 .bacc-content h1 {
   text-shadow: 2px 2px 0 var(--blue);
   font-style: italic;
@@ -811,7 +848,7 @@ End comment out From CB */
   font-size: 1.1rem;
   line-height: 1.8;
   font-family: var(--font-secondary);
-  overflow: hidden;                         /* removed so overflow wraps (didn't work) */
+  overflow: hidden;                         
   opacity: 1;
   transform: translate( 0 , 0 );
   margin-top: 1rem;
