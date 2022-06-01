@@ -31,15 +31,24 @@
   --eggplant: #84657A;
   --tan: #BC955C;
   --rust: #DE6B30;
-  --yellow: #BFC500;
+  --bright-yellow: #BFC500;
+  --bright-orange: #fd5f10;
+  --bright-blue: #16a1fe;
+  --bright-green: #AADD33;
 }
+
+/* REM INFO*/
+
+/* 0.9375rem = 15px                     */
+/* 1rem = root font size <html> element */
+/* rem is base 16 therefore 1rem = 16px */
 
 /* HTML */
 
 html * {
-  font-size: 15px /*-- !important;  */
-  line-height: 1.625 !important;
-  color: #B7C7D3 !important;
+/* font-size: 15px;       !important;  */
+  line-height: 1.625;  /* !important;  */
+  color: #B7C7D3;    /* !important;  */
   font-family: Montserrat, sans-serif !important;
 }
 
@@ -77,16 +86,6 @@ body {
   overflow: hidden;                   
   font-family: var(--font-primary);   /* added for testing on 2022--5-29            **/
 }
-/*                                    / cols removed, not needed
-.wpcols { 
-  display: 
-  flex; 
-  width: 100%;
-}
-.wpcols div { 
-  flex-grow: 1; 
-}
-*/
 
 /* HEADER */
 
@@ -150,7 +149,7 @@ header .container {
   justify-content: center;
   font-size: 15px; 
   width: 100%;
-  /* 	  display: flex;              testing */
+  /* 	  display: flex;                   testing */
 }
 .banner-menu {
   display: flex;                      /* added top menu bar for white text no underline */
@@ -215,11 +214,11 @@ header .container {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--btn-bg-color);             /* changed --btn-bg-color to --bg-color    */
-  color: var(--accent-color);                  /* changed --accent-color to --font-color  */
-  font-family: var(--font-secondary);          /* changed --font-secondary to --font-code */
+  background: var(--btn-bg-color);             
+  color: var(--accent-color);                  
+  font-family: var(--font-secondary);          
   font-style: italic;                         
-  font-weight: bold;                           /* removed bold */                   
+  font-weight: bold;                                            
   font-size: 1rem;
   text-align: center;
   text-transform: capitalize;
@@ -606,8 +605,7 @@ end for testing, see below                                       **/
   text-align: left;
   justify-content: center;
   color: var(--light-blue); 
-  font: var(--font-primary);                 /* this doesn't change the font in the div or section */
-  /*                                         sp where do you change the font for the site???       */
+  font: var(--font-primary);                 
   font-size: 15px; 
   width: 100%;
 }  
@@ -638,6 +636,7 @@ end for testing, see below                                       **/
   box-shadow: 2px 2px 4px var(--blue);;
 }
 
+/* these are not used                  **
 .collabs {
   display: flex;
   justify-content: center;
@@ -657,6 +656,7 @@ end for testing, see below                                       **/
 .collabs .collab:last-of-type img {
   filter: hue-rotate(180deg);
 }
+end these are not used                  **/
 
 /* TEAM */
 

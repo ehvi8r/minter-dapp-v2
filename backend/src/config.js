@@ -128,8 +128,9 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 //                              April XX 2022 at 10:00 am local time Launch date whitelisting available right away
 
-// ** OPTIONAL **
+// ** OPTIONAL **  22-05-31 NO LONGER OPTIONAL see ** Note below
 // let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary (uless you want to make changes later)
+// ** Note: You MUST enter the contract address due to changes by NFTPort, npm get_contract will no longer automatically populate it 
 // Contract Address from \backend\build\contract\_contract.json
 let CONTRACT_ADDRESS = "0xAa756Ade2F85939faA67Af97E8365FCAeD931faA"; // This is the RINKEBY contract for testing, set proper CA for production (this is required if you're going to make changes/updates to the contract later)
 
