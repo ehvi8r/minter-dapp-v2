@@ -1,11 +1,10 @@
 // replace with contract address from \backend\build\contract 
 // New Contract Generated 22-04-07 with ETH price at .001
 // New Contract Generated with const CONTRACT_NAME = 'The Bored Ape Cannabis Club';  ** Spaces Added/Upper & Lower Case
-// See: https://rinkeby.etherscan.io/tx/0xb0849c9b1dfcf61b9997cd9b55ac02dd26fcf6781f913d25ecd9d916d94bfbca
-const contractAddress = "0x4160050Dd201762eB65710dC724820E757236c32"; 
+const contractAddress = "0xAa756Ade2F85939faA67Af97E8365FCAeD931faA"; 
 //Replace with your own contract address from build/contract/_contract.json after generating contract                    
 
-const chain = "rinkeby"; // rinkeby or polygon
+const chain = "polygon"; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
@@ -19,7 +18,8 @@ const p_presale_coming_soon = "We are working hard to launch the NFT Collection.
 const p_presale_mint_not_whitelisted = "You are not whitelisted for the pre-sale.. 😢";
 const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted = "You've already claimed your whitelist mint. Thank you! 🎉";
-const p_public_mint = "No whitelist needed. Public minting is now open! 🎉";
+// const p_public_mint = "No whitelist needed. Public minting is now open! 🎉";
+const p_public_mint = "Public minting is live! 🎉";
 const button_presale_coming_soon = "Get on the Whitelist";
 const button_presale_mint_whitelisted = "Mint Your Special NFT";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";

@@ -1,48 +1,77 @@
+/*  Track Changes
+***********************************************************************************************************
+*  Committed to Netlify and Web 2022-09-01                                                                *                                                                                        
+*                                                                                                         *
+*  From: Styles.css 2022-05-23 as base                                                                    *
+*  Added Rust Metamask button 2022-09-01                                                                  *
+***********************************************************************************************************
+End Track Changes  */
+
 /* FONTS */
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush:ital,wght@0,200;0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* GLOBAL STYLES */
 
 :root {
-/*  This is the old colour pallet
-
-  --font-primary: "Poppins", sans-serif;
+/* BACC Font and Colour Pallet from BACC Branding Guide */
+  --font-primary: "Montserrat", sans-serif;
+  --font-primary-2: "Poppins", sans-serif;
   --font-secondary: "Arvo", serif;
   --font-code: "Roboto", monospace;
-  --bg-color: #00163f;
-  --bg-color-transparent: #00163f80;
-  --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
-  --header-shadow: var(--accent-color) 0px 0px 5px;
-  --card-shadow: var(--accent-color) 0px 0px 20px; */
-
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Arvo", serif;
-  --font-code: "Roboto", monospace;
+  --font-written: "Water Brush", cursive;
   --bg-color: #000000;
   --bg-color-transparent: #00000080;
   --font-color: #ffffff;
   --btn-bg-color: #B7D7D3;
   --accent-color: #7A97AB;
-  --header-shadow: var(--accent-color) 0px 0px 5px;
+  --header-shadow: var(--bg-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
-
-	/* Colour Pallet for High Flight  */
-	  --highflight-black:  #000000;
-    --blue: #7A97AB;
-    --light-blue: #B7C7D3;
-    --sage: #7A9B90;
-	  --eggplant: #84657A;
-	  --tan: #BC955C;
- 	  --rust: #DE6B30;
+/* Colour Guide */
+  --highflight-black:  #000000;
+  --blue: #7A97AB;
+  --light-blue: #B7C7D3;
+  --sage: #7A9B90;
+  --bright-green: #AADD33;
+  --eggplant: #84657A;
+  --tan: #BC955C;
+  --rust: #DE6B30;
+  --bright-yellow: #BFC500;
+  --bright-orange: #fd5f10;
+  --bright-blue: #16a1fe;
+  --bright-green: #AADD33;
 }
+
+/* REM INFO*/
+
+/* 0.9375rem = 15px                     */
+/* 1rem = root font size <html> element */
+/* rem is base 16 therefore 1rem = 16px */
+
+/* HTML */
+
+html * {
+/* font-size: 15px;       !important;  */
+  line-height: 1.625;  /* !important;  */
+  color: #B7C7D3;    /* !important;  */
+  font-family: Montserrat, sans-serif !important;
+}
+
+/* GENERAL */
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0;  
   box-sizing: border-box;
+}
+
+.nav-menu > li > a::before {
+  content: "";
+}
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -57,11 +86,12 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  max-width: 960px;                   
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden;                   
+  font-family: var(--font-primary);   /* added for testing on 2022--5-29            **/
 }
 
 /* HEADER */
@@ -69,29 +99,74 @@ body {
 header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
+  display: flex;                       /* Added */
+  /* max-width: 960px;                 /* Added */
 }
-
 header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 960px;                   /* Change to 2/3 of 960 = 640 -NO*/
 }
+.header-btn {
+  font-family:var(--font-primary);
+  border:0px solid #000;
+  border-radius:2px;
+  padding:1px 1px;
+  font-size:15px;
+  -webkit-transition:all .4s ease;
+  -moz-transition:all .4s ease;
+  transition:all .4s ease;
+  font-weight:600;
+  }
+.header-btn:hover {
+  background:#000;
+  color:#B0AFB1;
+  }
+.ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  }
+.menu {
+  margin:10 10px;
+  display:-moz-box;
+  display:flex;
+  -moz-box-align:center;
+  align-items:center;
+  flex-wrap:wrap;
+  -moz-box-pack:center;
+  justify-content:center;
+  }
+.menu li{
+  display:inline;
+  margin:0 5px;
+  }
 
 .menu {
   display: flex;
   gap: 2rem;
   align-items: center;
-}
+  }
 
+/* From Responsive Menu CSS */
+.menu-container{
+  padding:10px 0;
+  color: #B7C7D3; 
+  justify-content: center;
+  font-size: 15px; 
+  width: 100%;
+  /* 	  display: flex;                   testing */
+}
 .banner-menu {
   display: flex;                      /* added top menu bar for white text no underline */
-  font-size: 15px;                    /* 0.5rem; */
+  font-size: 0.9375rem;               /* 0.5rem; (15px = 0.9375rem */
   line-height: 1;   
   color: #B7C7D3;         
   gap: 2rem;
   align-items: center;
   text-decoration: none; 
-  transform: translateY(4px);        /* added to give a hover effect */
+  transform: translateY(4px);         /* added to give a hover effect */
  }
 .banner-menu:hover {
  box-shadow: none;
@@ -105,9 +180,10 @@ header .container {
 }
 
 /* NOT CONNECTED */
+
 .not-connected {
   align-items: center;
-  height: 100%;
+  height: 100%;                       /* Change height from 100% to 80% -NO*/
   text-align: center;
   margin: 0 auto 0 35vw;
   opacity: 0;
@@ -145,20 +221,22 @@ header .container {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--btn-bg-color);
-  color: var(--accent-color);
-  font-family: var(--font-secondary);
-  font-style: italic;
-  font-weight: bold;
+  background: var(--btn-bg-color);             
+  color: var(--accent-color);                  
+  font-family: var(--font-secondary);          
+  font-style: italic;                         
+  font-weight: bold;                                            
   font-size: 1rem;
   text-align: center;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: var(--header-shadow);
+  box-shadow: var(--bg-color-transparent);     /* change --header-shadow to --bg-color-transparent */
   cursor: pointer;
   position: relative;
   text-decoration: none;
   outline: none;
+  /* border-color: transparent;                added to test/removed  */
+  transform: translateY(4px);                  /* added to give a hover effect */
 }
 .btn:hover {
   box-shadow: none;
@@ -171,6 +249,7 @@ header .container {
   border-radius: 5rem;
   margin-left: 2rem;
   border-color: transparent;
+  transform: translateY(4px);                 /* added to give a hover effect */
 }
 
 .hero-btn {
@@ -182,7 +261,7 @@ header .container {
 .ebtn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--rust);
+  background: var(--rust);                    /* This is the 'Enter' button on the home page */
   color: var(--font-color);
   font-family: var(--font-secondary);
   font-style: italic;
@@ -197,9 +276,58 @@ header .container {
   text-decoration: none;
   outline: none;
 }
+
+/* METAMASK RUST BUTTON */
+
+.rust-button {
+  background-color: #DE6B30; /* Rust */
+  border: none;
+  /* float: left;
+  border: 1px #84657A;         eggplant border */
+  border-radius: 12px;
+  color: var(--font-color);
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+   /* width: 250px;}           if required */
+  font-size: 12px;
+}
+.rust-button:hover {
+  background-color: #DE6B30; /* Rust */
+  /* color: var(--highflight-black);   */
+  /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);    */
+  box-shadow: 0 2px 3px 0 #84657A, 0 8px 12px 0 #B7C7D3;               
+}
+
+.mmbtn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-code);
+  font-style: italic;
+  /* font-weight: bold; */
+  font-size: 1rem;
+  text-align: center;
+  /* text-transform: capitalize; */
+  transition: all 0.3s ease;
+  box-shadow: var(--eggplant);                /* changed from --header-shadow to -- eggplant */ 
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  border-color: transparent;
+  transform: translateY(4px);                 /* added to give a hover effect */
+}
+.mmbtn:hover {
+  box-shadow: none;
+  color:#B0AFB1;
+ }
+
 .enter-btn {
   border-radius: 4px;
-  font-size: 1.2rem;
+  font-size: 0.9375rem;                      /* 0.9375rem = 15px */
   padding: 1.0rem 3rem;
 }
 
@@ -214,7 +342,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(100vw);
+  transform: translateX(100vw);               /* May need to change this from 100vw to 70vw */
   transition: all 0.5s ease-in-out;
 }
 
@@ -225,7 +353,7 @@ header .container {
 
 /* COUNTDOWN SECTION */
 
-section {
+.section {
   flex: 1 1 auto;
 }
 
@@ -298,7 +426,8 @@ section {
 /* MINT CONTAINER */
 
 .mint-container {
-  width: 100%;
+  background-color: var(--bg-color-transparent);  /* added 2022-08-12  */
+  width: 100%;                                /* test change 100% to 80% - only changes content inside the container */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,7 +436,7 @@ section {
 .info-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100%;                                /* test change 100% to 80% - only changes content inside the container */                         
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -333,7 +462,7 @@ section {
 }
 
 .input-number {
-  height: 100%;
+  height: 100%;                                /* Change from 100% to 80% -NO*/
   padding: 1rem;
   vertical-align: top;
   text-align: center;
@@ -349,8 +478,8 @@ section {
 .total-price-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 1rem 0 2rem;
+  width: 100%;                                 /* test change 100% to 80% - only changes content inside the container -NO*/
+  padding: 1rem 0 2rem;              
 }
 
 .total-price-container p {
@@ -360,11 +489,12 @@ section {
 /* MINTED CONTAINER */
 
 .minted-container {
+  /* background-color: var(--bg-color-transparent);   added 2022-08-12  */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%;                                 /* test change 100% to 80% - only changes content inside the container -NO*/
 }
 
 .minted-container h1 {
@@ -385,10 +515,10 @@ section {
 
 .splide {
   position: absolute;
-  top: 90px;
+  top: 100px;                          /* changed from 90 to 100px (1/3 of image size) */
   left: 5rem;
   z-index: -1;
-/*  max-height: 100vh; */
+  max-height: 100vh;                   /* removed comment out */
 }
 
 .splide__slide {
@@ -397,15 +527,61 @@ section {
 }
 
 .splide__slide img {
+/*  width: 100%;                        Commented out and added additional code to fit splide images 
+	width: auto;
+	height: 100%;
+	max-height: 100vh;
+}
+*/
+	width: 100vw;
+	height: auto;
+	max-width: 100% !important;         /* changed from 80% to 100% */       
+}
+.splide__slide_small img {
+ width: 100%;                                     
+ border-width: 5px 10px;                       
+ border: var(--bg-color-transparent) solid;
+}
+
+.splide-2 {
+  position: absolute;
+  top: 100px;                          /* changed from 90 to 100px (1/3 of image size) */
+  left: 5rem;
+  z-index: -1;
+  max-height: 100vh;                   /* removed comment out */
+}
+.splide-2 .splide__slide img {
+  width: 20vw;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 12.5%; /* IE10 */
+  flex: 12.5%;
+  max-width: 12.5%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
 }
 
-/* From CB (not working)
+/* From CB (not working) so commented out 
 .splide .splide__track {
   max-height: 100vh;
 }
 .splide .splide__slide {
-  border: var(--accent-color) solid;
+  border: var(--bg-color-transparent) solid;
   border-width: 5px 10px;
 }
 
@@ -413,10 +589,19 @@ section {
   width: 100%;
 }
 
+.splide__slide_small img {
+ width: 100%;                                     
+ border-width: 5px 10px;                       
+ border: var(--bg-color-transparent) solid;
+}
+
 .splide-2 .splide__slide img {
   width: 20vw;
+  border: var(--bg-color-transparent) solid;   
+  border-width: 2px 5px;
 }
-End From CB */
+
+End comment out From CB */
 
 /* SPINNER */
 .dot-spin {
@@ -428,13 +613,35 @@ End From CB */
 
 /* BACC CONTENT */
 
+/* From Responsive Menu CSS */
+.bacc-container{
+  padding:10px 0;
+  color: #B7C7D3; 
+  justify-content: center;
+  font-size: 15px; 
+  width: 100%;
+  /* display: flex;              for testing */
+}
+/*                               for testing change bacc-content **
 .bacc-content {
-/*  padding: 5rem 0;  */
   padding: 1rem 0;
   background: var(--bg-color); 
   text-align: left;
   color: var(--light-blue);
 }
+end for testing, see below                                       **/
+
+ .bacc-content {
+  padding: 1rem 0;
+  background: var(--bg-color); 
+  text-align: left;
+  justify-content: center;
+  color: var(--light-blue); 
+  font: var(--font-primary);                 
+  font-size: 15px; 
+  width: 100%;
+}  
+
 .bacc-content h1 {
   text-shadow: 2px 2px 0 var(--blue);
   font-style: italic;
@@ -461,6 +668,7 @@ End From CB */
   box-shadow: 2px 2px 4px var(--blue);;
 }
 
+/* these are not used                  **
 .collabs {
   display: flex;
   justify-content: center;
@@ -480,6 +688,7 @@ End From CB */
 .collabs .collab:last-of-type img {
   filter: hue-rotate(180deg);
 }
+end these are not used                  **/
 
 /* TEAM */
 
@@ -528,6 +737,7 @@ End From CB */
   height: calc(100% - 20px);
   width: 4px;
   background: var(--blue);
+  /* color: var(--blue); */
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
@@ -639,33 +849,7 @@ End From CB */
   border-radius: 5px;
   padding: 1rem 2rem;
 }
-@media (max-width: 790px) {
-  .wrapper .center-line {
-    left: 40px;
-  }
-  .wrapper .row {
-    margin: 30px 0 3px 60px;
-  }
-  .wrapper .row section {
-    width: 100%;
-  }
-  .row-1 section::before {
-    left: -7px;
-  }
-  .row-1 section .icon {
-    left: -60px;
-  }
-}
-@media (max-width: 440px) {
-  .wrapper .center-line,
-  .row section::before,
-  .row section .icon {
-    display: none;
-  }
-  .wrapper .row {
-    margin: 10px 0;
-  }
-}
+
 
 /* FAQ */
 
@@ -696,7 +880,7 @@ End From CB */
   font-size: 1.1rem;
   line-height: 1.8;
   font-family: var(--font-secondary);
-  overflow: hidden;
+  overflow: hidden;                         
   opacity: 1;
   transform: translate( 0 , 0 );
   margin-top: 1rem;
@@ -760,7 +944,77 @@ End From CB */
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+/* padding: 1rem 2rem;  */
+  background: var(--bg-color);
+  display: flex;                      /* Added */
+  /*  max-width: 960px;               /* Added */
+}
+
 /* MEDIA QUERIES */
+
+/* From Responsive Menu css */
+@media (max-width:992px){
+  .menu li{
+    margin-bottom:2px;
+    } 
+  .menu a{
+    text-decoration:none;
+    color:#B7C7D3; 
+    font-size:15px;
+    line-height:5px;
+    display:block;
+    }
+  .menu li a svg{
+    width:1px;
+    fill:#000;
+    }
+  .menu li i
+  .menu-icon{
+    padding:1px;
+    font-size:2rem;
+    border-radius:1px;
+    color:#000;
+    }
+  .menu li i
+  .menu-icon:hover{
+    -webkit-animation:icon3d .2s infinite;
+    -moz-animation:icon3d .2s infinite;
+    animation:icon3d .2s infinite;
+    }
+  }
+
+  @media screen and (max-width:875px){
+    .navbar{
+      -moz-box-orient:vertical;
+      -moz-box-direction:normal;
+      flex-direction:column;
+    }
+    .logo-container img{
+      max-width:352px;
+      max-height:67px;
+      width:100%
+    }
+  .menu{
+    padding:0
+    }
+  }
+
+@media screen and (max-width:500px){
+  ul
+  .menu{
+    -moz-box-orient:vertical;
+    -moz-box-direction:normal;
+    flex-direction:column;
+    }
+  ul
+  .menu li{
+    margin-bottom:5px
+    }
+}
+/* End from Responsive Menu css */
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -809,11 +1063,110 @@ End From CB */
   }
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-/* padding: 1rem 2rem;  */
-  background: var(--bg-color);
+/* For mobile phones/small tablets */
+@media (max-width: 768px) {                 /* Changed 790 to 768 for small tablets and phones */
+  .wrapper .center-line {
+    left: 40px;
+  }
+  .wrapper .row {
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+/* For small mobile phones */
+@media (max-width: 600px) {                 /* Changed 440 to 600 for small devices/phones */
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+  .wrapper .row {
+    margin: 10px 0;
+  }
+}
+
+/* For mobile phones/small tablets */
+@media (max-width: 768px) {                 /* Added for .header */
+  .header .center-line {
+    left: 40px;
+  }
+  .header .row {
+    margin: 30px 0 3px 60px;
+  }
+  .header .row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+/* For small mobile phones */
+@media (max-width: 600px) {                 /* Added for .header */
+  .header .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+  .header .row {
+    margin: 10px 0;
+  }
+}
+
+/* For mobile phones/small tablets */
+@media (max-width: 768px) {                 /* Added for .footer */
+  .footer .center-line {
+    left: 40px;
+  }
+  .footer .row {
+    margin: 30px 0 3px 60px;
+  }
+  .footer .row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+/* For small mobile phones */
+@media (max-width: 600px) {                 /* Added for .footer */
+  .footer .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+  .footer .row {
+    margin: 10px 0;
+  }
+}
+
+/* Bootstrap Test */
+.navbar-toggle {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 786px) {
+  .navbar-brand {
+    padding-right: 60px;
+    height: auto;
+  }
 }
 
 /* UTILITIES */
