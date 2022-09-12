@@ -42,12 +42,12 @@
 }
 
 /* BACKGROUND IMAGE */
-/*  Not working properly... 
+/*  Not working properly when browser resized... ? */
 body 
 { background: #000000 
   url("home.jpg") no-repeat scroll top right; 
 }
-End BACKGROUND IMAGE */
+/* End BACKGROUND IMAGE */
 
 /* REM INFO */
 
