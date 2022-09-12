@@ -41,7 +41,14 @@
   --bright-green: #AADD33;
 }
 
-/* REM INFO*/
+/* BACKGROUND IMAGE */
+
+body 
+{ background: #000000 
+  url("home.jpg") no-repeat scroll top right; 
+}
+
+/* REM INFO */
 
 /* 0.9375rem = 15px                     */
 /* 1rem = root font size <html> element */
