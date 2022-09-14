@@ -91,7 +91,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 720px;                   /** [960] need to resize the container (smaller) - try 720 **/              
+  max-width: 960px;                   /** [960] need to resize the container (smaller) - try 720 **/              
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
