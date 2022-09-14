@@ -91,7 +91,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;                   /** [960] need to resize the container (smaller) - try 720 **/              
+  max-width: 960px;                                 
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
@@ -432,7 +432,10 @@ header .container {
 
 .mint-container {
   background-color: var(--bg-color-transparent);  /* added 2022-08-12  */
-  width: 100%;                                /* test change 100% to 80% - only changes content inside the container */
+  max-width: 720px; 
+  /** max-width: 720px;                                [.container is 960px] need to resize the mint container (smaller) - try 720 **/
+  /** check for a  max-height variable  **/ 
+  width: 100%;                                    /* test change 100% to 80% - only changes content inside the container */
   display: flex;
   flex-direction: column;
   justify-content: center;
