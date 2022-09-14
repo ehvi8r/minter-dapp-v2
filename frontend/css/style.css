@@ -435,7 +435,7 @@ header .container {
   max-width: 720px; 
   /** max-width: 720px;                                [.container is 960px] need to resize the mint container (smaller) - try 720 **/
   /** check for a  max-height variable  **/ 
-  width: 100%;                                    /* test change 100% to 80% - only changes content inside the container */
+  width: 80%;                                    /* test change 100% to 80% - only changes content inside the container */
   display: flex;
   flex-direction: column;
   justify-content: center;
