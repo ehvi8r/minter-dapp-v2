@@ -432,9 +432,11 @@ header .container {
 
 .mint-container {
   background-color: var(--bg-color-transparent);  /* added 2022-08-12  */
-  max-width: 640px; 
-  /** max-width: 720px;                                [.container is 960px] need to resize the mint container (smaller) - try 720 **/
+  /** max-width: 640px; it doesn't seem to matter what size this is set to **/
+  /** [.container is 960px] need to resize the mint container (smaller) - try 720/640... **/
   /** check for a  max-height variable  **/ 
+  max-width: 80%;
+  max-height: 80%;
   width: 100%;                                    /* test change 100% to 80% - only changes content inside the container */
   display: flex;
   flex-direction: column;
