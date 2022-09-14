@@ -91,12 +91,12 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;                   
+  max-width: 720px;                   /** [960] need to resize the container (smaller) - try 720 **/              
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
   overflow: hidden;                   
-  font-family: var(--font-primary);   /* added for testing on 2022--5-29            **/
+  font-family: var(--font-primary);   /* added for testing on 2022-05-29  */
 }
 
 /* HEADER */
