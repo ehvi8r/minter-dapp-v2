@@ -432,7 +432,7 @@ header .container {
 
 .mint-container {
   background-color: var(--bg-color-transparent);  /* added 2022-08-12  */
-  max-width: 720px; 
+  max-width: 640px; 
   /** max-width: 720px;                                [.container is 960px] need to resize the mint container (smaller) - try 720 **/
   /** check for a  max-height variable  **/ 
   width: 80%;                                    /* test change 100% to 80% - only changes content inside the container */
