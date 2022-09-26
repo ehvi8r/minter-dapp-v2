@@ -9,7 +9,9 @@ const chain = "polygon"; // rinkeby or polygon
 const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p = "Flying High with Bored Apes!";
-const welcome_s = "Welcome to Web3 Safety Education from the BACC Team";
+// added welcome_s  (Doesn't work!)
+// const welcome_s = "Welcome to Web3 Safety from the BACC Team";
+
 const h1_presale_coming_soon = "NFT Drop Coming Soon!";
 const h1_presale_mint = "Pre-Sale Minting Open!";
 const h1_public_mint = "Public Minting Open!";
