@@ -368,7 +368,7 @@ header .container {
   border-radius: 5px;
   border: 3px solid var(--accent-color);
   box-shadow: var(--card-shadow);
-  padding: 1rem;                              /* Changed 5rem to 1rem; 09-29-2022 */
+  padding: 1rem;                             /* Changed 5rem to 1rem; 09-29-2022 */
   margin-bottom: 2rem;
   opacity: 0;
   transform: translateX(70vw);               /* May need to change this from 100vw to 70vw ?? */
@@ -376,7 +376,7 @@ header .container {
 }
 
 .show-card {
-  opacity: 1;
+  opacity: 0.3;                              /* Changed opacity to 0.3 from 109-29-2022 */
   transform: translateX(0);
 }
 
@@ -521,7 +521,7 @@ header .container {
 /* MINTED CONTAINER */
 
 .minted-container {
-  /* background-color: var(--bg-color-transparent);   added 2022-08-12  */
+  background-color: var(--bg-color-transparent);   /* added 2022-08-12  */
   display: flex;
   flex-direction: column;
   justify-content: center;
