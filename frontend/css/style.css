@@ -36,8 +36,8 @@
   --tan: #BC955C;
   --rust: #DE6B30;
   --bright-yellow: #BFC500;
-  --bright-orange: #fd5f10;
-  --bright-blue: #16a1fe;
+  --bright-orange: #FD5F10;
+  --bright-blue: #16A1FE;
   --bright-green: #AADD33;
 }
 
@@ -118,7 +118,9 @@ body {
   padding: 1rem 2rem;
   justify-content: center;
   overflow: hidden;                   
-  font-family: var(--font-primary);   /* added for testing on 2022-05-29  */
+  font-family: var(--font-primary);               /* added for testing on 2022-05-29  */
+  background-color: var(--bg-color-transparent);  /* added for testing on 2022-09-29  */
+
 }
 
 /* HEADER */
@@ -362,14 +364,14 @@ header .container {
 
 .card {
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-transparent);  /* added transparent 29-09-2022 */
   border-radius: 5px;
   border: 3px solid var(--accent-color);
   box-shadow: var(--card-shadow);
-  padding: 5rem;
+  padding: 1rem;                              /* Changed 5rem to 1rem; 09-29-2022 */
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(100vw);               /* May need to change this from 100vw to 70vw */
+  transform: translateX(70vw);               /* May need to change this from 100vw to 70vw ?? */
   transition: all 0.5s ease-in-out;
 }
 
@@ -443,7 +445,8 @@ header .container {
   margin-top: 1rem;
 }
 
-.countdown > p {
+/* .countdown > p { */
+  .countdown p {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   margin-bottom: 2rem;
