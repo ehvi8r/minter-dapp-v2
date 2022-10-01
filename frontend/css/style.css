@@ -376,7 +376,7 @@ header .container {
 }
 
 .show-card {
-  opacity: 0.5;                              /* Changed opacity to 0.5 from 1 09-29-2022 */
+  opacity: 0.7;                              /* Changed opacity to 0.7 from 1 09-29-2022 */
   transform: translateX(0);
 }
 
