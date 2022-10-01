@@ -283,8 +283,8 @@ header .container {
 
 .hero-btn {
   border-radius: 4px;
-  font-size: 1rem;                            /* Changed font size from 1.2 ot 1rem */
-  padding: 0.5rem 1rem;                       /* Changed padding from 1.5/3rem to 0.5/1rem */
+  font-size: 1.2rem;                            
+  padding: 1rem 2rem;                         /* Changed padding from 1.5/3rem to 1/2rem */
 }
 
 .ebtn {
