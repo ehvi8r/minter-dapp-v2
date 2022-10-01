@@ -6,7 +6,7 @@ const contractAddress = "0xAa756Ade2F85939faA67Af97E8365FCAeD931faA";
 
 const chain = "polygon"; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
+const welcome_h1 = "Welcome to the Bored Ape Cannabis Club!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p = "Flying High with Bored Apes!";
 // added welcome_s  (Doesn't work!)
