@@ -1059,7 +1059,7 @@ footer {
   }
   .not-connected {
     background-color: var(--bg-color-transparent);
-    border-radius: 5px;
+    border-radius: 2px;                     /* Changed from 5px to 2px */
     padding: 2rem;
     margin: 0 auto;
   }
