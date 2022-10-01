@@ -489,7 +489,7 @@ header .container {
 .mint-btn {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;                                   /* Changed 3 rem to 1rem */
   margin: auto;
 }
 
