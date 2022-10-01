@@ -212,7 +212,7 @@ header .container {
 
 .not-connected {
   align-items: center;
-  height: 100%;                       /* Change height from 100% to 80% -NO*/
+  height: 100%;                       /* Change height from 100% to 80% -NO */
   text-align: center;
   margin: 0 auto 0 35vw;
   opacity: 0;
@@ -371,7 +371,7 @@ header .container {
   padding: 1rem;                             /* Changed 5rem to 1rem; 09-29-2022 */
   margin-bottom: 2rem;
   opacity: 0;
-  transform: translateX(70vw);               /* May need to change this from 100vw to 70vw ?? */
+  transform: translateX(70vw);               /* May need to change this from 100vw to 70vw ?? DTG? */
   transition: all 0.5s ease-in-out;
 }
 
@@ -458,7 +458,7 @@ header .container {
 .mint-container {
   background-color: var(--bg-color-transparent);  /* added 2022-08-12  doesn't seem to work, not transparent */
   /** how to re-size the mint container ?  **/
-  width: 80%;                                    /* 2022-09-30 test change 100% to 80% - only changes content inside the container */
+  width: 100%;                                    /* 2022-09-30 test change 100% to 80% - only changes content inside the container */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -468,7 +468,7 @@ header .container {
   background-color: var(--bg-color-transparent);  /* added 2022-09-14 to test */
   display: flex;
   justify-content: space-between;
-  width: 80%;                                    /* 2022-09-30 test change 100% to 80% - only changes content inside the container */                         
+  width: 100%;                                    /* 2022-09-30 test change 100% to 80% - only changes content inside the container */                         
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -494,7 +494,7 @@ header .container {
 }
 
 .input-number {
-  height: 100%;                                /* Change from 100% to 80% -NO*/
+  height: 100%;                                /* Change from 100% to 80% - NO*/
   padding: 1rem;
   vertical-align: top;
   text-align: center;
@@ -526,7 +526,7 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;                                 /* 2022-09-30 test change 100% to 80% - only changes content inside the container -NO*/
+  width: 100%;                                 /* 2022-09-30 test change 100% to 80% - only changes content inside the container -NO*/
 }
 
 .minted-container h1 {
@@ -651,7 +651,7 @@ End comment out From CB */
   color: #B7C7D3; 
   justify-content: center;
   font-size: 15px; 
-  width: 80%;                    /* 2022-09-30 test */
+  width: 100%;                    /* 2022-09-30 test change 100% to 80% */
   /* display: flex;              for testing */
 }
 /*                               for testing change bacc-content **
@@ -671,7 +671,7 @@ end for testing, see below                                       **/
   color: var(--light-blue); 
   font: var(--font-primary);                 
   font-size: 15px; 
-  width: 80%;                  /* 2022-09-30 test */
+  width: 100%;                  /* 2022-09-30 test change 100% to 80% */
 }  
 
 .bacc-content h1 {
