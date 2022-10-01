@@ -458,7 +458,7 @@ header .container {
 .mint-container {
   background-color: var(--bg-color-transparent);  /* added 2022-08-12  doesn't seem to work, not transparent */
   /** how to re-size the mint container ?  **/
-  width: 100%;                                    /* test change 100% to 80% - only changes content inside the container */
+  width: 80%;                                    /* 2022-09-30 test change 100% to 80% - only changes content inside the container */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -468,7 +468,7 @@ header .container {
   background-color: var(--bg-color-transparent);  /* added 2022-09-14 to test */
   display: flex;
   justify-content: space-between;
-  width: 100%;                                    /* test change 100% to 80% - only changes content inside the container */                         
+  width: 80%;                                    /* 2022-09-30 test change 100% to 80% - only changes content inside the container */                         
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -526,7 +526,7 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;                                 /* test change 100% to 80% - only changes content inside the container -NO*/
+  width: 80%;                                 /* 2022-09-30 test change 100% to 80% - only changes content inside the container -NO*/
 }
 
 .minted-container h1 {
@@ -651,7 +651,7 @@ End comment out From CB */
   color: #B7C7D3; 
   justify-content: center;
   font-size: 15px; 
-  width: 100%;
+  width: 80%;                    /* 2022-09-30 test */
   /* display: flex;              for testing */
 }
 /*                               for testing change bacc-content **
@@ -671,7 +671,7 @@ end for testing, see below                                       **/
   color: var(--light-blue); 
   font: var(--font-primary);                 
   font-size: 15px; 
-  width: 100%;
+  width: 80%;                  /* 2022-09-30 test */
 }  
 
 .bacc-content h1 {
