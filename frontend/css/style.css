@@ -365,7 +365,7 @@ header .container {
 .card {
   position: relative;
   background-color: var(--bg-color-transparent);  /* added transparent 29-09-2022 */
-  border-radius: 5px;
+  border-radius: 2px;                        /* Changed from 5px to 2px */
   border: 3px solid var(--accent-color);
   box-shadow: var(--card-shadow);
   padding: 1rem;                             /* Changed 5rem to 1rem; 09-29-2022 */
